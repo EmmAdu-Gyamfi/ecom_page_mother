@@ -12,7 +12,7 @@ class OrderItemBuild extends StatelessWidget {
     required this.orderItems,
   });
 
-  final List<OrderItem> orderItems;
+  final List<dynamic> orderItems;
 
   @override
   Widget build(BuildContext context) {

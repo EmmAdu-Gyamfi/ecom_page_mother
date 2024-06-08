@@ -22,3 +22,4 @@ class About{
     "banner": "https://komlynk.com/dir_one.png",
   };
 }
+
