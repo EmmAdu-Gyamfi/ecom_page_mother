@@ -1,0 +1,43 @@
+{
+  "product": {
+    "product1": {
+      "Id": "abc123",
+      "Name": {
+        "label": "T Shirt",
+        "type": "type_1"
+      },
+      "Description": {
+        "label": "T Shirt",
+        "type": "type_1"
+      },
+      "Color": {
+        "label": ["Green", "Blue", "Red"],
+        "type": "type_2"
+      },
+      "Option": {
+        "label": ["Green", "Blue", "Red"],
+        "type": "type_3"
+      }
+    },
+    "product2": {
+      "Id": "abcd1234",
+      "Name": {
+        "label": "T Shirt",
+        "type": "type_1"
+      },
+      "Description": {
+        "label": "T Shirt",
+        "type": "type_1"
+      },
+      "Color": {
+        "label": ["Green", "Blue", "Red"],
+        "type": "type_2"
+      },
+      "Option": {
+        "label": ["Green", "Blue", "Red"],
+        "type": "type_3",
+        "default": []
+      }
+    }
+  }
+}

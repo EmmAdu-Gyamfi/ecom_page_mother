@@ -1,0 +1,362 @@
+{
+  "classType": "tagData",
+  "currentPage": 1,
+  "pageSize": 50,
+  "totalResult": 100,
+  "totalPage": 12,
+  "loadSize": 10,
+  "currentLoad": 1,
+  "result": [
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+      "tagName": {
+        "users": ["1", "3", "9", "2"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Moving out offshore",
+      "resourceUrl": "https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4",
+      "tagName": {
+        "users": ["1", "2", "7"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Going for a field trip",
+      "resourceUrl": "http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3",
+      "tagName": {
+        "users": ["3", "1", "7"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "First day as a software engineer",
+      "resourceUrl": "http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3",
+      "tagName": {
+        "users": ["1", "7"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+      "tagName": {
+        "users": [],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "My first video on the internet",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "tagName": {
+        "users": ["1", "3", "7"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+      "tagName": {
+        "users": ["7"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "tagName": {
+        "users": ["1"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+      "tagName": {
+        "users": ["1", "7"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "tagName": {
+        "users": ["1", "3", "7"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "tagName": {
+        "users": ["7"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "tagName": {
+        "users": ["5"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "tagName": {
+        "users": ["7", "8"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+      "tagName": {
+        "users": ["1", "3", "9", "2"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Moving out offshore",
+      "resourceUrl": "https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4",
+      "tagName": {
+        "users": ["1", "2", "7"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Going for a field trip",
+      "resourceUrl": "http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3",
+      "tagName": {
+        "users": ["3", "1", "7"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "First day as a software engineer",
+      "resourceUrl": "http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3",
+      "tagName": {
+        "users": ["1", "7"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "tagName": {
+        "users": [],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "My first video on the internet",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "tagName": {
+        "users": ["1", "3", "7"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "tagName": {
+        "users": ["7"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "tagName": {
+        "users": ["1"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "tagName": {
+        "users": ["1", "7"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "tagName": {
+        "users": ["1", "3", "7"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "tagName": {
+        "users": ["7"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "tagName": {
+        "users": ["5"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "tagName": {
+        "users": ["7", "8"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "tagName": {
+        "users": ["1", "3", "9", "2"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Moving out offshore",
+      "resourceUrl": "https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4",
+      "tagName": {
+        "users": ["1", "2", "7"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Going for a field trip",
+      "resourceUrl": "http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3",
+      "tagName": {
+        "users": ["3", "1", "7"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "First day as a software engineer",
+      "resourceUrl": "http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3",
+      "tagName": {
+        "users": ["1", "7"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "tagName": {
+        "users": [],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "My first video on the internet",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "tagName": {
+        "users": ["1", "3", "7"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "tagName": {
+        "users": ["7"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "tagName": {
+        "users": ["1"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "tagName": {
+        "users": ["1", "7"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "tagName": {
+        "users": ["1", "3", "7"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "tagName": {
+        "users": ["7"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "tagName": {
+        "users": ["5"],
+        "classType": "user"
+      }
+    },
+    {
+      "classType": "media",
+      "resourceName": "Trip to Dubai",
+      "resourceUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "tagName": {
+        "users": ["7", "8"],
+        "classType": "user"
+      }
+    }
+  ]
+}
