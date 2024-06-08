@@ -1,0 +1,418 @@
+{
+  "resource": [
+    {
+      "classType": "resource",
+      "id": "1",
+      "name": "Kofi",
+      "service": ["s1", "s2", "s3"]
+    },
+    {
+      "classType": "resource",
+      "id": "2",
+      "name": "Ama",
+      "service": ["s1", "s3"]
+    }
+  ],
+  "service": [
+    {
+      "classType": "service",
+      "serviceId": "s1",
+      "duration": 100,
+      "name": "Remove Wisdom Teeth",
+      "description": "If the tooth hasn't come through the gum, a small cut (incision) will be made in the gum to access it. A small piece of the bone covering the tooth may also need to be removed. The tooth may be cut into smaller parts to make it easier to remove through the opening.If the tooth hasn't come through the gum, a small cut (incision) will be made in the gum to access it. A small piece of the bone covering the tooth may also need to be removed. The tooth may be cut into smaller parts to make it easier to remove through the opening.",
+      "media": [
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "asset/audio/audio1.wav"
+      ]
+    },
+    {
+      "classType": "service",
+      "serviceId": "s2",
+      "duration": 120,
+      "name": "Teeth Braces want the message to go beyond two lines and see what happens to the widget created to be ellipsed",
+      "description": "Braces work by exerting constant pressure on teeth and jaws to change their position and alter the smile. If scan and removed. ",
+      "media": [
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "asset/audios/audio1.wav"
+      ]
+    },
+    {
+      "classType": "service",
+      "serviceId": "s3",
+      "duration": 40,
+      "name": "Teeth Whitening Care Long Message Test",
+      "description": "Teeth whitening is a form of dentistry and should only be carried out by a dentist or another regulated dental professional, such as a dental hygienist or dental therapist, on the prescription of a dentist. A primary care physician (PCP), or primary care provider, is a health care professional who practices general medicine. PCPs are our first stop for medical care. Most PCPs are doctors, but nurse practitioners and physician assistants can sometimes also be PCPs.",
+      "media": [
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "asset/audios/audio1.wav"
+      ]
+    },
+    {
+      "classType": "service",
+      "serviceId": "s4",
+      "duration": 70,
+      "name": "The Eye Check",
+      "description": "A test called ocular motility evaluates the movement of your eyes. Your ophthalmologist looks to see if your eyes are aligned. They also check that your eye muscles are working properly. A primary care physician (PCP), or primary care provider, is a health care professional who practices general medicine. PCPs are our first stop for medical care. Most PCPs are doctors, but nurse practitioners and physician assistants can sometimes also be PCPs.",
+      "media": [
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "asset/audios/audio1.wav"
+      ]
+    },
+    {
+      "classType": "service",
+      "serviceId": "s5",
+      "duration": 40,
+      "name": "Primary Care",
+      "description": "A primary care physician (PCP), or primary care provider, is a health care professional who practices general medicine. PCPs are our first stop for medical care. Most PCPs are doctors, but nurse practitioners and physician assistants can sometimes also be PCPs. A primary care physician (PCP), or primary care provider, is a health care professional who practices general medicine. PCPs are our first stop for medical care. Most PCPs are doctors, but nurse practitioners and physician assistants can sometimes also be PCPs. A primary care physician (PCP), or primary care provider, is a health care professional who practices general medicine. PCPs are our first stop for medical care. Most PCPs are doctors, but nurse practitioners and physician assistants can sometimes also be PCPs.",
+      "media": [
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "asset/audios/audio1.wav"
+      ]
+    },
+    {
+      "classType": "service",
+      "serviceId": "s6",
+      "title": "Remove Wisdom Teeth",
+      "duration": 100,
+      "name": "Remove Wisdom teeth",
+      "description": "If the tooth hasn't come through the gum, a small cut (incision) will be made in the gum to access it. A small piece of the bone covering the tooth may also need to be removed. The tooth may be cut into smaller parts to make it easier to remove through the opening. A primary care physician (PCP), or primary care provider, is a health care professional who practices general medicine. PCPs are our first stop for medical care. Most PCPs are doctors, but nurse practitioners and physician assistants can sometimes also be PCPs.",
+      "media": [
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "asset/audios/audio1.wav"
+      ]
+    },
+    {
+      "classType": "service",
+      "serviceId": "s7",
+      "duration": 120,
+      "name": "Teeth Braces",
+      "description": "Braces work by exerting constant pressure on teeth and jaws to change their position and alter the smile. The brackets glued to teeth hold the archwire in place which places pressure on teeth. Over time teeth move into the desired position. The soft tissue that surrounds the teeth and bone are periodontal ligaments. A primary care physician (PCP), or primary care provider, is a health care professional who practices general medicine. PCPs are our first stop for medical care. Most PCPs are doctors, but nurse practitioners and physician assistants can sometimes also be PCPs.",
+      "media": [
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "asset/audios/audio1.wav"
+      ]
+    },
+    {
+      "classType": "service",
+      "serviceId": "s8",
+      "duration": 40,
+      "name": "Teeth Whitening Care",
+      "description": "Teeth whitening is a form of dentistry and should only be carried out by a dentist or another regulated dental professional, such as a dental hygienist or dental therapist, on the prescription of a dentist. A primary care physician (PCP), or primary care provider, is a health care professional who practices general medicine. PCPs are our first stop for medical care. Most PCPs are doctors, but nurse practitioners and physician assistants can sometimes also be PCPs.",
+      "media": [
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "asset/audios/audio1.wav"
+      ]
+    },
+    {
+      "classType": "service",
+      "serviceId": "s9",
+      "duration": 70,
+      "name": "The Eye Check",
+      "description": "A test called ocular motility evaluates the movement of your eyes. Your ophthalmologist looks to see if your eyes are aligned. They also check that your eye muscles are working properly. A primary care physician (PCP), or primary care provider, is a health care professional who practices general medicine. PCPs are our first stop for medical care. Most PCPs are doctors, but nurse practitioners and physician assistants can sometimes also be PCPs.",
+      "media": [
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "asset/audios/audio1.wav"
+      ]
+    },
+    {
+      "classType": "service",
+      "serviceId": "s10",
+      "duration": 40,
+      "name": "Primary Care",
+      "description": "A primary care physician (PCP), or primary care provider, is a health care professional who practices general medicine. PCPs are our first stop for medical care. Most PCPs are doctors, but nurse practitioners and physician assistants can sometimes also be PCPs. A primary care physician (PCP), or primary care provider, is a health care professional who practices general medicine. PCPs are our first stop for medical care. Most PCPs are doctors, but nurse practitioners and physician assistants can sometimes also be PCPs.",
+      "media": [
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+        "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "asset/audios/audio1.wav"
+      ]
+    }
+  ],
+  "bookingSlot": {
+    "blockSize": 30
+  },
+  "openHour": {
+    "advanceAvailability": 30,
+    "day": {
+      "monday": {
+        "open": true,
+        "startHour": 9,
+        "startMinute": 0,
+        "endHour": 18,
+        "endMinute": 0
+      },
+      "tuesday": {
+        "open": true,
+        "startHour": 9,
+        "startMinute": 0,
+        "endHour": 18,
+        "endMinute": 0
+      },
+      "wednesday": {
+        "open": true,
+        "startHour": 9,
+        "startMinute": 0,
+        "endHour": 18,
+        "endMinute": 0
+      },
+      "thursday": {
+        "open": true,
+        "startHour": 9,
+        "startMinute": 0,
+        "endHour": 18,
+        "endMinute": 0
+      },
+      "friday": {
+        "open": true,
+        "startHour": 9,
+        "startMinute": 0,
+        "endHour": 16,
+        "endMinute": 0
+      },
+      "saturday": {
+        "open": false,
+        "startHour": 9,
+        "startMinute": 0,
+        "endHour": 18,
+        "endMinute": 0
+      },
+      "sunday": {
+        "open": false,
+        "startHour": 9,
+        "startMinute": 0,
+        "endHour": 18,
+        "endMinute": 0
+      }
+    }
+  },
+  "bookedService": [
+    {
+      "classType": "bookedService",
+      "userId1": "1",
+      "serviceId": "s1",
+      "year": 2023,
+      "month": 12,
+      "day": 19,
+      "hour": 12,
+      "minute": 0
+    },
+    {
+      "classType": "bookedService",
+      "userId1": "1",
+      "serviceId": "s1",
+      "year": 2023,
+      "month": 12,
+      "day": 20,
+      "hour": 9,
+      "minute": 0
+    },
+    {
+      "classType": "bookedService",
+      "userId1": "1",
+      "serviceId": "s1",
+      "year": 2023,
+      "month": 12,
+      "day": 20,
+      "hour": 12,
+      "minute": 0
+    },
+    {
+      "classType": "bookedService",
+      "userId1": "1",
+      "serviceId": "s1",
+      "year": 2023,
+      "month": 12,
+      "day": 20,
+      "hour": 14,
+      "minute": 0
+    },
+    {
+      "classType": "bookedService",
+      "userId1": "1",
+      "serviceId": "s1",
+      "year": 2023,
+      "month": 12,
+      "day": 20,
+      "hour": 16,
+      "minute": 0
+    },
+    {
+      "classType": "bookedService",
+      "userId1": "1",
+      "serviceId": "s1",
+      "year": 2023,
+      "month": 12,
+      "day": 21,
+      "hour": 12,
+      "minute": 0
+    },
+    {
+      "classType": "bookedService",
+      "userId1": "1",
+      "serviceId": "s1",
+      "year": 2023,
+      "month": 12,
+      "day": 21,
+      "hour": 16,
+      "minute": 0
+    },
+    {
+      "classType": "bookedService",
+      "userId1": "1",
+      "serviceId": "s1",
+      "year": 2023,
+      "month": 12,
+      "day": 26,
+      "hour": 9,
+      "minute": 0
+    },
+    {
+      "classType": "bookedService",
+      "userId1": "1",
+      "serviceId": "s1",
+      "year": 2023,
+      "month": 12,
+      "day": 26,
+      "hour": 13,
+      "minute": 0
+    },
+    {
+      "classType": "bookedService",
+      "userId1": "1",
+      "serviceId": "s1",
+      "year": 2023,
+      "month": 12,
+      "day": 28,
+      "hour": 12,
+      "minute": 0
+    },
+    {
+      "classType": "bookedService",
+      "userId1": "1",
+      "serviceId": "s1",
+      "year": 2024,
+      "month": 1,
+      "day": 3,
+      "hour": 9,
+      "minute": 0
+    },
+    {
+      "classType": "bookedService",
+      "userId1": "1",
+      "serviceId": "s1",
+      "year": 2024,
+      "month": 1,
+      "day": 5,
+      "hour": 12,
+      "minute": 0
+    },
+    {
+      "classType": "bookedService",
+      "userId1": "1",
+      "serviceId": "s1",
+      "year": 2024,
+      "month": 1,
+      "day": 7,
+      "hour": 12,
+      "minute": 0
+    },
+    {
+      "classType": "bookedService",
+      "userId1": "1",
+      "serviceId": "s1",
+      "year": 2024,
+      "month": 1,
+      "day": 12,
+      "hour": 12,
+      "minute": 0
+    }
+  ]
+}

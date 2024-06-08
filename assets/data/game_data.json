@@ -1,0 +1,110 @@
+{
+  "classType": "game",
+  "result": [
+    {
+      "name": "Call Of Duty",
+      "type": "type1",
+      "thumbnail": "https://media.giphy.com/media/116HcgXaISxL5S/giphy.gif"
+    },
+    {
+      "name": "Come Out And Play",
+      "type": "type2",
+      "thumbnail": "https://i.imgur.com/xAMLmg7.gif"
+    },
+    {
+      "name": "Match Day",
+      "type": "type3",
+      "thumbnail": "https://i.gifer.com/embedded/download/CYF2.gif"
+    },
+    {
+      "name": "Bully Ka Josh",
+      "type": "type1",
+      "thumbnail": "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/fc4e0053614db398b5a6f132f2bd8ab3-1668111576/intro%20room%20voojah/do-animated-pixel-art-twitch-screen-for-your-stream.gif"
+    },
+    {
+      "name": "Marvel",
+      "type": "type2",
+      "thumbnail": "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExajF3dzBtZzB5cDZhdmFuZ2I1Ymlka2QxczZmMm9kbmNtcTJoNXFhdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3o7WIKBSdsc0vsWScM/200.gif"
+    },
+    {
+      "name": "Machine Rocker",
+      "type": "type3",
+      "thumbnail": "https://colinbendell.cloudinary.com/image/upload/c_crop,f_auto,g_auto,h_350,w_400/v1512090971/Wizard-Clap-by-Markus-Magnusson.gif"
+    },
+    {
+      "name": "Rock And Pop",
+      "type": "type1",
+      "thumbnail": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e6faf895655841.5e9cb08c8de49.gif"
+    },
+    {
+      "name": "Call Of Duty",
+      "type": "type1",
+      "thumbnail": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b6a90186073249.5d8e4c19be90c.png"
+    },
+    {
+      "name": "Come Out And Play",
+      "type": "type2",
+      "thumbnail": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/42f04579103773.5cb89116008fa.jpg"
+    },
+    {
+      "name": "Match Day",
+      "type": "type3",
+      "thumbnail": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b6a90186073249.5d8e4c19be90c.png"
+    },
+    {
+      "name": "Bully Ka Josh",
+      "type": "type1",
+      "thumbnail": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/2462e022419915.563126a8e09e8.jpg"
+    },
+    {
+      "name": "Marvel",
+      "type": "type2",
+      "thumbnail": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/fbc38026830483.563721904e5f2.png"
+    },
+    {
+      "name": "Machine Rocker",
+      "type": "type3",
+      "thumbnail": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/a2513334056576.56c29cdaeea43.png"
+    },
+    {
+      "name": "Rock And Pop",
+      "type": "type1",
+      "thumbnail": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0f274878863213.5cb0ee133ee8c.png"
+    },
+    {
+      "name": "Call Of Duty",
+      "type": "type1",
+      "thumbnail": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b6a90186073249.5d8e4c19be90c.png"
+    },
+    {
+      "name": "Come Out And Play",
+      "type": "type2",
+      "thumbnail": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/42f04579103773.5cb89116008fa.jpg"
+    },
+    {
+      "name": "Match Day",
+      "type": "type3",
+      "thumbnail": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b6a90186073249.5d8e4c19be90c.png"
+    },
+    {
+      "name": "Bully Ka Josh",
+      "type": "type1",
+      "thumbnail": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/2462e022419915.563126a8e09e8.jpg"
+    },
+    {
+      "name": "Marvel",
+      "type": "type2",
+      "thumbnail": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/fbc38026830483.563721904e5f2.png"
+    },
+    {
+      "name": "Machine Rocker",
+      "type": "type3",
+      "thumbnail": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/a2513334056576.56c29cdaeea43.png"
+    },
+    {
+      "name": "Rock And Pop",
+      "type": "type1",
+      "thumbnail": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0f274878863213.5cb0ee133ee8c.png"
+    }
+  ]
+}
