@@ -7,6 +7,7 @@ class Types {
   static const Color colourBlue = Colors.blue;
   static Color colourBlueShade800 = Colors.blue.shade800;
   static const Color colourApp = Colors.white;
+  static const Color colourWhite = Colors.white;
   static const Color colourGreen = Colors.green;
   static const Color colourLightGreen = Colors.lightGreen;
   static const Color colourBlack = Colors.black;
@@ -327,7 +328,12 @@ class Types {
   static const double borderWidthMedium = .5;
   static const double borderWidthLarge = 1;
 
-
+//------------------------------------------
+  // height
+  static double height100 = 100;
+  //-------------------------------------
+  //
+  static double maxWidth = 500;
   //----------------------------------------------------------------
   //opacity
   static const double opacityTimeSlot = .05;

@@ -14,4 +14,5 @@ class AppTheme {
   static Color primary = Colors.teal;
   static Color secondary = Colors.grey[800]!;
   static Color buttonTextColor = Colors.white;
+  static Color textFieldBorderSide = Colors.white;
 }

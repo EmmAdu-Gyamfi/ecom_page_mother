@@ -51,28 +51,28 @@ class _textFormFieldState extends State<textFormField> {
             color: AppTheme.textFieldBorderSide,
 
           ),
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: Types.radiusBorderMedium
         ),
         focusedBorder: OutlineInputBorder(
           borderSide: BorderSide(
             color: AppTheme.primary,
 
           ),
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: Types.radiusBorderMedium
         ),
         errorBorder: OutlineInputBorder(
           borderSide: BorderSide(
             color: AppTheme.textFieldBorderSide,
-            width: Types.borderSideWidth,
+            width: Types.borderWidthSmall,
           ),
-          borderRadius: BorderRadius.circular(Types.circularBorderRadius),
+          borderRadius: Types.radiusBorderMedium
         ),
         focusedErrorBorder: OutlineInputBorder(
           borderSide: BorderSide(
             color: AppTheme.textFieldBorderSide,
-            width: Types.borderSideWidth,
+            width: Types.borderWidthSmall,
           ),
-          borderRadius: BorderRadius.circular(Types.circularBorderRadius),
+          borderRadius: Types.radiusBorderMedium
         ),
         filled: true,
         fillColor: AppTheme.textFieldBorderSide,
