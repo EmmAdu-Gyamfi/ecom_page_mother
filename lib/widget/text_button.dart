@@ -4,22 +4,22 @@ import '../global/typedef.dart';
 
 
 class TextButton extends StatelessWidget {
-  final String text;
+  final String label;
   final VoidCallback onPressed;
 
   const TextButton({
     super.key,
-    required this.text,
-    required this.onPressed, required Text child,
+    required this.label,
+    required this.onPressed,
+    required Text child,
   });
 
   @override
   Widget build(BuildContext context) {
     return TextButton(
       onPressed: onPressed,
-      text: '',
       child: Text(
-        text,
+        label,
         style: TextStyle(
           fontSize: Types.navTextSmall,
           color: AppTheme.primary,

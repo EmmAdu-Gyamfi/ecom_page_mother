@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pin_code_fields/pin_code_fields.dart';
 
 class Types {
   //----------------------------------------------------------------
@@ -29,6 +28,190 @@ class Types {
   static Color colourGreyShade200 = Colors.grey.shade200;
   static Color colourGreyShade400 = Colors.grey.shade400;
   static Color colourPurpleShade600 = Colors.purple.shade600;
+
+  //----------------------------------------------------------------
+  //label
+  static const String firstPage = "<<";
+  static const String lastPage = ">>";
+  static const String ok = "OK";
+  static const String no = 'No';
+  static const String go = 'Go';
+  static const String all = 'All';
+  static const String yes = 'Yes';
+  static const String tab = "Tab";
+  static const String key = 'Key';
+  static const String pin = "Pin";
+  static const String auth = "Auth";
+  static const String send = 'Send';
+  static const String save = 'Save';
+  static const String note = "Note";
+  static const String date = "Date";
+  static const String edit = "Edit";
+  static const String card = "Card";
+  static const String game = "Game";
+  static const String chat = "Chat";
+  static const String name = 'Name';
+  static const String total = 'Total';
+  static const String close = 'Close';
+  static const String about = 'About';
+  static const String media = 'Media';
+  static const String phone = 'Phone';
+  static const String value = 'Value';
+  static const String login = "Login";
+  static const String email = "Email";
+  static const String title = "Title";
+  static const String alert = 'Alert';
+  static const String price = 'Price';
+  static const String alarm = "Alarm";
+  static const String admin = "Admin";
+  static const String remove = "Remove";
+  static const String submit = 'Submit';
+  static const String status = 'Status';
+  static const String search = "Search";
+  static const String items = "item(s)";
+  static const String cancel = 'Cancel';
+  static const String rating = "Rating";
+  static const String verify = "Verify";
+  static const String delete = "Delete";
+  static const String select = "Select";
+  static const String signUp = "Sign up";
+  static const String update = "Update";
+  static const String labelUser = "User";
+  static const String stepper = "Stepper";
+  static const String details = "Details";
+  static const String account = 'Account';
+  static const String receipt = 'Receipt';
+  static const String profile = 'Profile';
+  static const String gallery = "Gallery";
+  static const String systems = "Systems";
+  static const String address = 'Address';
+  static const String vibrate = "Vibrate";
+  static const String timeout = "Time out";
+  static const String usersLabel = "Users";
+  static const String endTime = "End Time";
+  static const String leftChevron = "Left";
+  static const String reupload = 'Reupload';
+  static const String discount = 'Discount';
+  static const String quantity = "Quantity";
+  static const String delivery = "Quantity";
+  static const String deselect = "Deselect";
+  static const String password = "Password";
+  static const String database = "Database";
+  static const String rightChevron = "Right";
+  static const String checkOut = 'Check out';
+  static const String lastName = "Last Name";
+  static const String yourCart = "Your Cart";
+  static const String noRating = "No Rating";
+  static const String tagUsers = "Tag Users";
+  static const String sortType = "Sort Type";
+  static const String dashboard = "Dashboard";
+  static const String firstName = "First Name";
+  static const String startTime = "Start Time";
+  static const String addRating = 'Add Rating';
+  static const String selectAll = "Select All";
+  static const String sortOrder = "Sort Order";
+  static const String expandAll = "Expand All";
+  static const String scheduling = "Scheduling";
+  static const String rateApp = "Rate this App";
+  static const String gauge = "Gauge And Range";
+  static const String privileges = "Privileges";
+  static const String continueLabel = "Continue";
+  static const String grandTotal = "Grand Total";
+  static const String bulkUpload = "Bulk Upload";
+  static const String pinPage = "Go to Pin Page";
+  static const String invalidPin = 'Invalid pin';
+  static const String resendCode = "Resend Code";
+  static const String showDialog = "Show Dialog";
+  static const String ratingName = "Simon Tetteh";
+  static const String enterPin = "Enter your pin";
+  static const String serviceDate = "Service Date";
+  static const String serviceTime = "Service Time";
+  static const String bulkActions = "Bulk Actions";
+  static const String deselectAll = "Deselect All";
+  static const String passwordNew = "New Password";
+  static const String phoneNumber = "Phone Number";
+  static const String collapseAll = "Collapse All";
+  static const String deleteAlert = 'Delete Alert';
+  static const String invalidCode = 'Invalid Code';
+  static const String confirmation = "Confirmation";
+  static const String profilePhoto = "Profile Photo";
+  static const String manualUpload = "Manual Upload";
+  static const String gameDetail = "Game Controller";
+  static const String notSpecified = "Not Specified";
+  static const String highestRated = "Highest Rated";
+  static const String failedToLoad = "Failed to load";
+  static const String activityDate = "Activity Dates";
+  static const String selectedUser = "selected users";
+  static const String searchResult = 'Search Results';
+  static const String pinHeading = "Pin Verification";
+  static const String searchPlaceholder = "Search...";
+  static const String productRating = "Product Rating";
+  static const String currentStatus = 'Current Status';
+  static const String uploadProduct = "Upload Products";
+  static const String statusHistory = 'Status History';
+  static const String notificationLabel = "Notification";
+  static const String availableDates = "Available Dates";
+  static const String setAppointment = "Set Appointment";
+  static const String addInformation = "Add Information";
+  static const String productReviews = "Product Reviews";
+  static const String passwordChange = "Change Password";
+  static const String uploadCSVFile = "Upload A CSV File";
+  static const String bottomNavigator = "Bottom Navigator";
+  static const String addVoucherCode = "Add voucher code";
+  static const String emptyPassword = 'password is empty';
+  static const String otpHeading = "Verification";
+  static const String passwordCurrent = "Current Password";
+  static const String mediaVisibility = 'Media Visibility';
+  static const String passwordConfirm = "Confirm Password";
+  static const String mediaTitle = "This is my media Title";
+  static const String notAMember = "Not already a member? ";
+  static const String currentNameLabel = "Current Username";
+  static const String alreadyAMember = "Already a member? ";
+  static const String notificationTone = "Notification tone";
+  static const String loginFormHeading = "Let's sign you in";
+  static const String conversationTone = "Conversation tones";
+  static const String nothingSelected = "Nothing is selected";
+  static const String currentPrivileges = "Current Privileges";
+  static const String requiredField = 'This field is required';
+  static const String canSeePicture = "Who can see your picture";
+  static const String searchUsersPlaceholder = "Search users...";
+  static const String leaveARating = "Please leave a star rating";
+  static const String passwordNewConfirm = "Confirm New Password";
+  static const String invalidPhoneNumber = "Invalid phone number";
+  static const String couldNotUpdate= "Could not update";
+  static const String availableTimeSlot = "Available Time Slots";
+  static const String somethingWentWrong = "Something went wrong";
+  static const String personalInformation = "Personal Information";
+  static const String signUpFormHeading = "Let's get you on board";
+  static const String unmatchedPassword = "passwords do not match";
+  static const String schedulingServiceImageLabel = "Service Images";
+  static const String passwordEdit = "Click to update your password";
+  static const String uploadMultipleImages = "Upload multiple images";
+  static const String addOptionalSelection = "Add Optional Selection";
+  static const String mediaNotHandleMessage = "Unrecognized file type";
+  static const String addExclusiveSelection = "Add Exclusive Selection";
+  static const String deleteMessage = "Are you sure you want to delete";
+  static const String accountTitle = "Who can see my your personal info";
+  static const String invalidCredential = 'Invalid username and password';
+  static const String wrongPin = "Wrong pin entered, enter the right pin.";
+  static const String passwordChangeHeading = "Let's update your password";
+  static const String privilegeDescription = "Privileges request and update";
+  static const String selectAvailableDate = "Select one of the available dates";
+  static const String scrollableBottomNavigator = "Scrollable Bottom Navigator";
+  static const String enterPinMessage = "Enter your pin to give you admin access.";
+  static const String videoPlayError= "Picked video files cannot be played on web";
+  static const String receiptSubTitle = 'If turned off, you cannot upload videos';
+  static const String confirmActionMessage = 'Do you want to continue with this update';
+  static const String cancelActionMessage = 'Do you want to continue and cancel the changes';
+  static const String cancelActionProfileMsg = 'Your changes will not be applied. Do you want to cancel';
+  static const String ratingErrorMsg = "Please click on any star to choose the rating value";
+  static const String conversationSubtitle = "Play sounds for incoming and outgoing messages";
+  static const String otpSentMessage = "An OTP has been sent to you. Please type in the verification code.";
+  static const String navigationWarningMsg = "You will lose all data as you navigate away. Do you like to continue";
+  static const String cancelSelectedUserWarningMsg = "Selected users will not be added as you cancel this action. Do you like to continue";
+  static const String navigationWarningTagMsg = "Your changes will not be effected as you navigate away without saving. Do you like to continue";
+  static const String passwordErrorMessage = "The password must be at least 8 characters long and must include at least 1 digit, 1 lowercase letter, 1 uppercase letter, and 1 symbol.";
+
 
   //----------------------------------------------------------------
   //shade
@@ -191,7 +374,7 @@ class Types {
   static const String productInfo_ = "Info_";
   static const String productValue_ = "Value_";
   static const String productDefault_ = "Default_";
-  static const String productdefault= "default";
+  static const String productDefault= "default";
   static const String productFiles= "Files";
   static const String productNetwork = 'Network';
   static const String submitForm = "Submit Form";
@@ -204,11 +387,11 @@ class Types {
   static const String removeData = "data at index";
   static const String productUploadStat = "Product Upload Status";
   static const String emptyFileError = "Provide files of your product";
-  static const String commanSeparatedItem = "Enter comma separated items";
+  static const String commaSeparatedItem = "Enter comma separated items";
   static const String failedUploadItems = "item(s) failed to upload";
   static const String failedRowItem = "Failed to upload item on row number";
   static const String successfulUpload= "item(s) successfully uploaded";
-  static const String manaulUploadLabel = "Manaully Upload Products";
+  static const String manualUploadLabel = "Manually Upload Products";
   static const String bulkUploadLabel ="Bulk Upload Products";
   static const String selectAttribute = "Select the Attribute you want to add";
   static const String enterKeyValueMsg = "Enter your key and values accordingly";
@@ -266,18 +449,18 @@ class Types {
   //asset/images
   static const String waitGif = "asset/image/wait.gif";
   static const String imageOrder = "asset/image/order.png";
-  static const String imagehirt = "asset/image/shirts.jpg";
+  static const String imageShirt = "asset/image/shirts.jpg";
   static const String imageCalendar = "asset/image/calendar.png";
-  static const String imageCotten = "asset/image/cotten.png";
+  static const String imageCotton = "asset/image/cotton.png";
   static const String imageBooking = "asset/image/booking.png";
   static const String imageBookingIcon = "asset/image/booking-icon.jpg";
   static const String imageBookingIcon2 = "asset/image/booking-icon-2.png";
   static const String imageVideo = "asset/image/video-thumbnail.png";
-  static const String imageAudioj = "asset/image/audio_thumbnail.png";
-  static const String imageAudio = "asset/image/audio_thumnail.jpg";
+  static const String imageAudioPng = "asset/image/audio_thumbnail.png";
+  static const String imageAudioJpg = "asset/image/audio_thumbnail.jpg";
   static const String imageGenShirt = "asset/image/gen_shirt.png";
   static const String imageNoProfile = "asset/image/no-profile.jpg";
-  static const String imagelimShirt = "asset/image/slim_shirt.png";
+  static const String imageSlimShirt = "asset/image/slim_shirt.png";
   static const String imageBlackShirt = "asset/image/black_shirt.png";
   static const String imageBlackTeeShirt = "asset/image/black_tee_shirt.jpg";
   static const String audioAssetUrl = "asset/audios/tempfile.mp3";
@@ -441,25 +624,25 @@ class Types {
   //----------------------------------------------------------------
   //border
   static final OutlineInputBorder borderInput = OutlineInputBorder(
-    borderRadius: BorderRadius.circular(Constant.double6),
+    borderRadius: BorderRadius.circular(5),
     borderSide: const BorderSide(
-      width: Constant.double1,
+      width: 1,
       strokeAlign: BorderSide.strokeAlignOutside,
-      color: Constant.colourBorderGray,
+      color: Types.colourBorderGray,
     ),
   );
 
   static final OutlineInputBorder borderInputBlack = OutlineInputBorder(
-    borderRadius: BorderRadius.circular(Constant.double6),
+    borderRadius: BorderRadius.circular(5),
     borderSide: const BorderSide(
-      width: Constant.double1,
+      width: 1,
       strokeAlign: BorderSide.strokeAlignOutside,
-      color: Constant.colourBlack,
+      color: Types.colourBlack,
     ),
   );
 
   static const BorderSide borderContainerGray =
-  BorderSide(width: Constant.double1, color: Constant.colourBorderGray);
+  BorderSide(width: 1, color: Types.colourBorderGray);
 
   static const InputBorder transparentInputBorder = OutlineInputBorder(
     borderSide: BorderSide(
@@ -467,10 +650,10 @@ class Types {
     ),
   );
 
-  static const Size buttonSize = Size(Constant.double100, Constant.double35);
+  static const Size buttonSize = Size(100, 35);
 
   static const UnderlineInputBorder underLineInputBorder = UnderlineInputBorder(
-    borderSide: BorderSide(color: Constant.colourRed),
+    borderSide: BorderSide(color: Types.colourRed),
   );
 
   //----------------------------------------------------------------
@@ -479,41 +662,26 @@ class Types {
   static const IconThemeData headerIconTheme = IconThemeData(color: Colors.white);
 
   //----------------------------------------------------------------
-  //otp signup pinTheme
-  static final PinTheme pinTheme = PinTheme(
-      shape: PinCodeFieldShape.circle,
-      fieldHeight: Constant.double50,
-      fieldWidth: Constant.double50,
-      selectedColor: Constant.colourBlue,
-      inactiveColor: Constant.colourBorderGray,
-      inactiveFillColor: Constant.colourApp,
-      activeColor: Colors.blue,
-      activeFillColor: Colors.blue,
-      selectedFillColor: Constant.colourApp,
-      fieldOuterPadding: const EdgeInsets.symmetric(horizontal: Constant.double6)
-  );
-
-  //----------------------------------------------------------------
   //Data mapper structure
   static Map signUpEntity = {
-    Constant.pin: "",
-    Constant.email: "",
-    Constant.password: "",
-    Constant.lastNameKey: "",
-    Constant.firstNameKey: "",
-    Constant.phoneNumberKey: "",
-    Constant.passwordConfirm: ""
+    Types.pin: "",
+    Types.email: "",
+    Types.password: "",
+    Types.lastNameKey: "",
+    Types.firstNameKey: "",
+    Types.phoneNumberKey: "",
+    Types.passwordConfirm: ""
   };
 
   static Map passwordChangeEntity = {
-    Constant.passwordCurrentKey: "",
-    Constant.passwordNewKey: "",
-    Constant.passwordNewConfirmKey: ""
+    Types.passwordCurrentKey: "",
+    Types.passwordNewKey: "",
+    Types.passwordNewConfirmKey: ""
   };
 
   static Map loginEntity = {
-    Constant.emailKey: "",
-    Constant.passwordKey: "",
+    Types.emailKey: "",
+    Types.passwordKey: "",
   };
 
   //----------------------------------------------------------------
@@ -529,30 +697,30 @@ class Types {
   static const String resourceName = 'resourceName';
 
   static Map tagDataEntity = {
-    Constant.currentPage: 0,
-    Constant.totalResultKey: 0,
-    Constant.currentLoad: 0,
-    Constant.totalPage: 0,
-    Constant.loadSize: 0,
-    Constant.pageSize: 0,
-    Constant.resultKey: []
+    Types.currentPage: 0,
+    Types.totalResultKey: 0,
+    Types.currentLoad: 0,
+    Types.totalPage: 0,
+    Types.loadSize: 0,
+    Types.pageSize: 0,
+    Types.resultKey: []
   };
 
   static Map notificationEntity = {
-    Constant.idKey: "",
-    Constant.labelKey: "",
-    Constant.descriptionKey: "",
-    Constant.defaultKey: false,
-    Constant.optionKey: []
+    Types.idKey: "",
+    Types.labelKey: "",
+    Types.descriptionKey: "",
+    Types.defaultKey: false,
+    Types.optionKey: []
   };
 
   static Map userEntity = {
-    Constant.currentPage: 0,
-    Constant.currentLoad: 0,
-    Constant.totalPage: 0,
-    Constant.loadSize: 0,
-    Constant.pageSize: 0,
-    Constant.resultKey: []
+    Types.currentPage: 0,
+    Types.currentLoad: 0,
+    Types.totalPage: 0,
+    Types.loadSize: 0,
+    Types.pageSize: 0,
+    Types.resultKey: []
   };
 
 //----------------------------------------------------------------
@@ -564,16 +732,12 @@ class Types {
   static const String serviceMedia = "media";
 
   static Map serviceEntity = {
-    Constant.serviceId: "",
-    Constant.serviceDuration: 0,
-    Constant.serviceDescription: "",
-    Constant.serviceName: "",
-    Constant.serviceMedia: []
+    Types.serviceId: "",
+    Types.serviceDuration: 0,
+    Types.serviceDescription: "",
+    Types.serviceName: "",
+    Types.serviceMedia: []
   };
-
-  //----------------------------------------------------------------
-  //Product options
-  static List<String> productOptions = [addInformation, addExclusiveSelection, addOptionalSelection];
 
   //----------------------------------------------------------------
   //Filtering options
@@ -584,11 +748,6 @@ class Types {
   static List<String> sortOrderList = [ascendingShortName, descendingShortName,];
   static List<String> sortTypeList = [ 'Name', "Date",'Rating'];
   static List<String> sortUsersTypeList = ['Name', 'Date', 'Phone'];
-
-  //----------------------------------------------------------------
-  //Tag User Options
-
-  // static List<String> tagUserOptionList = [selectAll, deselectAll, tagUsers, ];
 
   //----------------------------------------------------------------
   //Notification List
