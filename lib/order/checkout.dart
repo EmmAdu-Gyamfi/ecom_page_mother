@@ -4,100 +4,57 @@ import 'package:flutter/cupertino.dart';
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:page/widget/CustomAppBar.dart';
 
 import '../widget/OrderItemBuild.dart';
 
 Map<dynamic, dynamic> checkoutKeyList = {
   "order" : {
-    "orderId":"",
-    "userId":"",
-    "totalPrice":"",
-    "items":[
+    "order_id":1,
+    "user_id":1,
+    "total_price":0.00,
+    "tax":10.00,
+    "item_list":[
       {
-        "productId":"",
-        "quantity":"",
-        "category": "",
-        "unitPrice": "",
-        "description":"",
-        "productImages": []
+        "product_id":1,
+        "quantity":0,
+        "product_name":"Nike Air Force 1",
+        "category": "Footwears",
+        "unit_price": 200.0,
+        "description":"Description of the foot ware",
+        "product_image_list": [
+          {
+            "image_url":"https://images.unsplash.com/photo-1566958769312-82cef41d19ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzF8fHByb2R1Y3RzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60"
+          },
+          {
+            "image_url":"https://images.unsplash.com/photo-1566958769312-82cef41d19ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzF8fHByb2R1Y3RzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60",
+
+          }
+        ]
       },
+
+      {
+        "product_id":2,
+        "quantity":0,
+        "product_name":"Samsung S22 Ultra",
+        "category": "Computing",
+        "unit_price": 5000.0,
+        "description":"Description of S22 Ultra",
+        "product_image_list": [
+          {
+            "image_url":"https://images.unsplash.com/photo-1566958769312-82cef41d19ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzF8fHByb2R1Y3RzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60"
+          },
+          {
+            "image_url":"https://images.unsplash.com/photo-1566958769312-82cef41d19ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzF8fHByb2R1Y3RzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60",
+
+          }
+        ]
+      },
+
+
     ]
   }
 };
-
-class OrderItem {
-  OrderItem({
-    required this.productId,
-    required this.productImages,
-    required this.unitPrice,
-    required this.category,
-    this.quantity,
-    required this.description,
-  });
-
-  late final int productId;
-  late final List<String> productImages;
-  late final double unitPrice;
-  late final String category;
-  int? quantity;
-  late final String description;
-
-  OrderItem.fromJson(Map<String, dynamic> json) {
-    productId = json['productId'];
-    productImages = List<String>.from(json['productImages']);
-    unitPrice = json['unitPrice'];
-    category = json['category'];
-    quantity = json['quantity'];
-    description = json['description'];
-  }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = <String, dynamic>{};
-    data['productId'] = productId;
-    data['productImages'] = productImages;
-    data['unitPrice'] = unitPrice;
-    data['category'] = category;
-    data['quantity'] = quantity;
-    data['description'] = description;
-    return data;
-  }
-}
-
-class Order {
-  Order({
-    required this.orderId,
-    required this.userId,
-    this.totalPrice,
-    required this.orderItems,
-    required this.taxes,
-  });
-
-  late final int orderId;
-  late final int userId;
-  double? totalPrice;
-  late final List<OrderItem> orderItems;
-  late final double taxes;
-
-  Order.fromJson(Map<String, dynamic> json) {
-    orderId = json['orderId'];
-    userId = json['userId'];
-    totalPrice = json['totalPrice'];
-    taxes = json['taxes'];
-    orderItems = List<OrderItem>.from(
-        json['orderItems'].map((productJson) => OrderItem.fromJson(productJson))
-    );
-  }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = <String, dynamic>{};
-    data['orderId'] = orderId;
-    data['userId'] = userId;
-    data['totalPrice'] = totalPrice;
-    data['taxes'] = taxes;
-    data['orderItems'] = orderItems.map((product) => product.toJson()).toList();
-    return data;
-  }
-}
 
 
 class CheckoutPage extends StatefulWidget {
@@ -119,24 +76,10 @@ class _CheckoutPageState extends State<CheckoutPage> {
         .size
         .height;
     return Scaffold(
-      appBar: AppBar(
-        leading: Icon(Icons.list),
-        title: Text("Title"),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 5),
-            child: Icon(Icons.search),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(right: 5),
-            child: Icon(Icons.person_2_outlined),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(right: 20,),
-            child: Icon(Icons.shopping_cart_outlined),
-          ),
-
-        ],
+      appBar: CustomAppBar(
+        title: 'Custom App Bar',
+        leadingIcon: Icons.menu,
+        actionIcons: [Icons.search, Icons.person, Icons.shopping_cart],
       ),
 
       backgroundColor: Colors.black.withOpacity(0.15),
@@ -146,7 +89,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
         width: screenWidth,
         child: Column(
           children: [
-            _orderItemsBuilder()
+            _productItemListVertical()
           ],
         ),
       ),
@@ -154,49 +97,12 @@ class _CheckoutPageState extends State<CheckoutPage> {
     );
   }
 
-  Widget _orderItemsBuilder() {
-    var order = Order(
-      orderId: 1,
-      userId: 1,
-      // totalPrice: 100.0,
-      orderItems: [
-        OrderItem(
-          productId: 1,
-          productImages: ["https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.jumia.com.gh%2Fgeneric-ice-sleeves-outdoor-riding-sun-proof-arm-protection-cover-76281360.html&psig=AOvVaw2FhB8W716c7aITJ5MXfg-G&ust=1717934078306000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOCKyPDry4YDFQAAAAAdAAAAABAE", "image_url_1", "image_url_1"],
-          unitPrice: 50.00,
-          category: "Product category",
-          description: "Description of this product",
-        ),
-        OrderItem(
-          productId: 2,
-          productImages: ["image_url_2", "image_url_1", "image_url_1"],
-          unitPrice: 100.00,
-          category: "Product category",
-          description: "Description of this product",
-        ),
+  Widget _productItemListVertical() {
 
-        OrderItem(
-          productId: 3,
-          productImages: ["https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*","image_url_1", "image_url_1"],
-          unitPrice: 150.00,
-          category: "Product category",
-          description: "Description of this product",
-        ),
 
-        OrderItem(
-          productId: 4,
-          productImages: ["https://images.unsplash.com/photo-1566958769312-82cef41d19ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzF8fHByb2R1Y3RzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60", "image_url_1", "image_url_1"],
-          unitPrice: 200.00,
-          category: "Product category",
-          description: "Description of this product",
-        ),
-      ],
-      taxes: 10.00,
-    );
-    
-    var orderItems = order.orderItems;
+    List<dynamic> itemList = checkoutKeyList["order"]["item_list"];
 
-    return OrderItemBuild(orderItems: orderItems);
+    return OrderItemBuild(orderItems: itemList);
 
   }
 
