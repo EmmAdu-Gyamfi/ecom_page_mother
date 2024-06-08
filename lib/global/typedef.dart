@@ -30,6 +30,14 @@ class Types {
   static Color colourPurpleShade600 = Colors.purple.shade600;
 
   //----------------------------------------------------------------
+  //opacity
+  static const double opacityTimeSlot = .05;
+  static const double opacityVeryLow = .15;
+  static const double opacityLow = .2;
+  static const double opacityMed = .5;
+  static const double opacityHigh = 1;
+
+  //----------------------------------------------------------------
   //label
   static const String firstPage = "<<";
   static const String lastPage = ">>";
@@ -90,7 +98,7 @@ class Types {
   static const String usersLabel = "Users";
   static const String endTime = "End Time";
   static const String leftChevron = "Left";
-  static const String reupload = 'Reupload';
+  static const String reUpload = 'Reupload';
   static const String discount = 'Discount';
   static const String quantity = "Quantity";
   static const String delivery = "Quantity";
@@ -427,7 +435,6 @@ class Types {
 
   static const String jpeg = "jpeg";
   static const String jpe = "jpe";
-
 
   //----------------------------------------------------------------
   //Country code
@@ -798,5 +805,4 @@ class Types {
       "time": null
     }
   ];
-
 }

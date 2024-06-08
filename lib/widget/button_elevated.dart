@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import '../global/theme.dart';
 
-class ProfileButton extends StatelessWidget {
+class ButtonElevated extends StatelessWidget {
   final String text;
   final VoidCallback onPressed;
   final double borderRadius;
   final EdgeInsets padding;
 
-  ProfileButton({
+  const ButtonElevated({super.key,
     required this.text,
     required this.onPressed,
     this.borderRadius = 30.0,

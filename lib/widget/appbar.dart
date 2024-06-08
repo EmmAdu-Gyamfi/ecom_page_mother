@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
+class AppBarCustom extends StatelessWidget implements PreferredSizeWidget {
   final String title;
   final IconData leadingIcon;
   final List<IconData> actionIcons;
 
-  const CustomAppBar({
+  const AppBarCustom({super.key,
     required this.title,
     required this.leadingIcon,
     required this.actionIcons,
@@ -16,17 +16,10 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       leading: Icon(leadingIcon),
       title: Text(title),
-      actions: actionIcons
-          .map(
-            (iconData) => Padding(
-          padding: const EdgeInsets.only(right: 5),
-          child: Icon(iconData),
-        ),
-      )
-          .toList(),
+      actions: actionIcons.map((iconData) => Padding(padding: const EdgeInsets.only(right: 5), child: Icon(iconData))).toList(),
     );
   }
 
   @override
-  Size get preferredSize => Size.fromHeight(kToolbarHeight);
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 }
