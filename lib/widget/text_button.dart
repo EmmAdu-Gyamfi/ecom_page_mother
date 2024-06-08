@@ -3,14 +3,15 @@ import 'package:page/global/theme.dart';
 import '../global/typedef.dart';
 
 
-class NavTextButton extends StatelessWidget {
-  final String text;
+class TextButton extends StatelessWidget {
+  final String label;
   final VoidCallback onPressed;
 
-  NavTextButton({
+  const TextButton({
     super.key,
-    required this.text,
+    required this.label,
     required this.onPressed,
+    required Text child,
   });
 
   @override
@@ -18,7 +19,7 @@ class NavTextButton extends StatelessWidget {
     return TextButton(
       onPressed: onPressed,
       child: Text(
-        text,
+        label,
         style: TextStyle(
           fontSize: Types.navTextSmall,
           color: AppTheme.primary,

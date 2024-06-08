@@ -27,7 +27,7 @@ class ProfileButton extends StatelessWidget {
       ),
       child: Text(
         text,
-        style: TextStyle(fontSize: 16, color: AppTheme.bottonTextColor),
+        style: TextStyle(fontSize: 16, color: AppTheme.buttonTextColor),
       ),
     );
   }
