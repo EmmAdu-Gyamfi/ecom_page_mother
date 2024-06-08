@@ -7,6 +7,24 @@ import 'package:flutter/material.dart';
 
 import '../widget/OrderItemBuild.dart';
 
+Map<dynamic, dynamic> checkoutKeyList = {
+  "order" : {
+    "orderId":"",
+    "userId":"",
+    "totalPrice":"",
+    "items":[
+      {
+        "productId":"",
+        "quantity":"",
+        "category": "",
+        "unitPrice": "",
+        "description":"",
+        "productImages": []
+      },
+    ]
+  }
+};
+
 class OrderItem {
   OrderItem({
     required this.productId,
