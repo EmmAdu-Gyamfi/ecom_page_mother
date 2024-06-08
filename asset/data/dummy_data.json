@@ -1,0 +1,398 @@
+{
+  "autoLogin": {
+    "pin": "1234",
+    "autoLogin": false
+  },
+  "userData": {
+    "firstName": "Clifford",
+    "lastName": "Osei",
+    "email": "cliff@cliff.com",
+    "bio": "Keep on keeping on",
+    "phone": "+233246553478",
+    "pin": "1234",
+    "imageUrl": "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg"
+  },
+  "privilege": {
+    "privilegeList": [
+      {
+        "id": "1",
+        "label": "Super Admin",
+        "name": "super",
+        "value": false
+      },
+      {
+        "id": "2",
+        "label": "Manager",
+        "name": "manager",
+        "value": true
+      },
+      {
+        "id": "3",
+        "label": "Admin",
+        "name": "admin",
+        "value": false
+      },
+      {
+        "id": "4",
+        "label": "Worker Role",
+        "name": "worker",
+        "value": true
+      },
+      {
+        "id": "5",
+        "label": "Customer Role",
+        "name": "customer",
+        "value": false
+      }
+    ]
+  },
+  "media": {
+    "mediaList": [
+      "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+      "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+      "https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4",
+      "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+      "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+      "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+      "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg"
+    ],
+    "videoList": [
+      "https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4",
+      "asset/videos/video2.mp4"
+    ]
+  },
+  "collapse": {
+    "collapseList": [
+      {
+        "label": "Mother",
+        "description": "This is the mother tile"
+      },
+      {
+        "label": "Father",
+        "description": "This is the father tile. Fathers should be cherished too. Father's day should be loud like how mothers day is."
+      },
+      {
+        "label": "Sibling",
+        "description": "These are my siblings tile"
+      },
+      {
+        "label": "external",
+        "description": "This is the external body"
+      }
+    ]
+  },
+  "cartItem": {
+    "cartItemList": [
+      {
+        "id": "1",
+        "title": "Shoes",
+        "price": 21.5,
+        "quantity": 3,
+        "currency": "$",
+        "imageUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg"
+      },
+      {
+        "id": "4",
+        "title": "PS5 with wireless game control",
+        "price": 16.73,
+        "quantity": 3,
+        "currency": "$",
+        "imageUrl": "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg"
+      },
+      {
+        "id": "2",
+        "title": "Shirts",
+        "price": 10.21,
+        "quantity": 3,
+        "currency": "$",
+        "imageUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg"
+      },
+      {
+        "id": "3",
+        "title": "Panties",
+        "price": 5.44,
+        "quantity": 3,
+        "currency": "$",
+        "imageUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg"
+      },
+      {
+        "id": "5",
+        "title": "Panties",
+        "price": 7.01,
+        "quantity": 1,
+        "currency": "$",
+        "imageUrl": "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg"
+      },
+      {
+        "id": "6",
+        "title": "Panties",
+        "price": 10.11,
+        "quantity": 2,
+        "currency": "$",
+        "imageUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg"
+      }
+    ]
+  },
+  "product": {
+    "items": [
+      "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+      "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+      "https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4",
+      "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+      "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+      "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/09/image-url-15-768x513.jpg",
+      "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+      "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+      "asset/audio/audio1.wav"
+    ],
+    "averageRating": 3.5,
+    "name": "Shirt for Men",
+    "description": "This is the description of the product. This is the description of the product",
+    "ratings": [
+      {
+        "name": "Cane Mensah",
+        "message": "This product is very beautiful. It came as expected",
+        "rating": 5,
+        "date": "2023-08-25 00:00:00.000"
+      },
+      {
+        "name": "Ben Jimmy",
+        "message": "The product wasn't delivered on time",
+        "rating": 1,
+        "date": "2023-08-28 00:00:00.000"
+      },
+      {
+        "name": "Francis Kesse",
+        "message": "This product was delivered late but isn't bad",
+        "rating": 3,
+        "date": "2023-10-25 00:00:00.000"
+      }
+    ]
+  },
+  "rating": {
+    "ratingList": [
+      {
+        "imageUrl": "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "rating": 2,
+        "price": 45.0,
+        "name": "Peter Bima",
+        "currency": "$"
+      },
+      {
+        "imageUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "rating": 3,
+        "price": 60.0,
+        "name": "Samuel Johnson",
+        "currency": "$"
+      },
+      {
+        "imageUrl": "https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-2-768x512.jpg",
+        "rating": 1,
+        "price": 70.0,
+        "name": "Ato Johnson",
+        "currency": "$"
+      },
+      {
+        "imageUrl": "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "rating": 4,
+        "price": 20.0,
+        "name": "John Johnson",
+        "currency": "$"
+      }
+    ]
+  },
+  "user": {
+    "classType": "user",
+    "pageSize": 20,
+    "currentPage": 1,
+    "currentLoad": 1,
+    "loadSize": 10,
+    "totalPage": 5,
+    "totalResult": 96,
+    "dataType": "account",
+    "result": [
+      {
+        "id": "1",
+        "name": "Ato Johnson",
+        "phone": "+233243554354",
+        "email": "ato7@cliff.com",
+        "imageUrl": "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "bio": "Keep on keeping on",
+        "date": "2023-08-25 00:00:00.000"
+      },
+      {
+        "id": "2",
+        "name": "Yaw Timothy",
+        "phone": "+234443554354",
+        "email": "cliff@cliff.com",
+        "imageUrl": "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "bio": "Never say never",
+        "date": "2022-02-25 00:00:00.000"
+      },
+      {
+        "id": "3",
+        "name": "Kwame Siaw",
+        "phone": "+235553554354",
+        "email": "siaw@yopmail.com",
+        "imageUrl": "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "bio": "You only live once",
+        "date": "2023-01-25 00:00:00.000"
+      },
+      {
+        "id": "4",
+        "name": "Tino Somuah",
+        "phone": "+236663554354",
+        "email": "tino@yopmail.com",
+        "imageUrl": "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "bio": "You only live once",
+        "date": "2023-02-25 00:00:00.000"
+      },
+      {
+        "id": "5",
+        "name": "Tinooo Abima",
+        "phone": "+236663554354",
+        "email": "abima@yopmail.com",
+        "imageUrl": "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "bio": "You only live once",
+        "date": "2023-03-25 00:00:00.000"
+      },
+      {
+        "id": "6",
+        "name": "Anna Canna",
+        "phone": "+237773554354",
+        "email": "anna@yopmail.com",
+        "imageUrl": "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "bio": "You only live once",
+        "date": "2023-04-25 00:00:00.000"
+      },
+      {
+        "id": "7",
+        "name": "Peter Bima",
+        "phone": "+237773554354",
+        "email": "peter@yopmail.com",
+        "imageUrl": "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "bio": "You only live once",
+        "date": "2023-05-25 00:00:00.000"
+      },
+      {
+        "id": "8",
+        "name": "Bismark Ansong",
+        "phone": "+237773554354",
+        "email": "bismark@yopmail.com",
+        "imageUrl": "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "bio": "You only live once",
+        "date": "2023-06-25 00:00:00.000"
+      },
+      {
+        "id": "9",
+        "name": "Shadrack Tetteh",
+        "phone": "+235242554354",
+        "email": "shadrack@yopmail.com",
+        "imageUrl": "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "bio": "You only live once",
+        "date": "2023-07-25 00:00:00.000"
+      },
+      {
+        "id": "10",
+        "name": "Tema Jessica",
+        "phone": "+233453554354",
+        "email": "tema@yopmail.com",
+        "imageUrl": "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "bio": "You only live once",
+        "date": "2023-10-25 00:00:00.000"
+      },
+      {
+        "id": "11",
+        "name": "Esther Mandy",
+        "phone": "+233451111354",
+        "email": "esther@yopmail.com",
+        "imageUrl": "https://i.postimg.cc/Wz1NWXgF/Microsoft-Teams-image.jpg",
+        "bio": "You only live once",
+        "date": "2023-11-25 00:00:00.000"
+      }
+    ]
+  },
+  "notification": {
+    "alarm": {
+      "classType": "notification",
+      "id": "alarm",
+      "label": "alarm",
+      "description": "Notification to wake one up",
+      "default": false,
+      "option": [
+        {
+          "label": "Vibration",
+          "selected": "Default",
+          "setting": ["Off", "Default", "Short", "Long"]
+        },
+        {
+          "label": "Tone",
+          "selected": "Default",
+          "setting": ["None", "Default", "Beep", "Bird Loop", "Attentive"]
+        }
+      ]
+    },
+    "message": {
+      "classType": "notification",
+      "id": "message",
+      "label": "message",
+      "description": "Notification to alert you when you receive a message",
+      "default": false,
+      "option": [
+        {
+          "label": "Vibration",
+          "selected": "Default",
+          "setting": ["Off", "Default", "Short", "Long"]
+        },
+        {
+          "label": "Tone",
+          "selected": "Default",
+          "setting": ["None", "Default", "Beep", "Bird Loop", "Attentive"]
+        }
+      ]
+    }
+  },
+  "settingItem": [
+    {
+      "title": "Account",
+      "subTitle": "Privacy, security, change number",
+      "icon": "asset/icon/account.png",
+      "pageClass": "PageAccount"
+    },
+    {
+      "title": "Media",
+      "subTitle": "Check carousel page",
+      "icon": "asset/icon/privacy.png",
+      "pageClass": "PageMedia"
+    },
+    {
+      "title": "Carts",
+      "subTitle": "See all your cart items",
+      "icon": "asset/icon/chat.png",
+      "pageClass": "PageCart"
+    },
+    {
+      "title": "Notification",
+      "subTitle": "Message, group & call tones",
+      "icon": "asset/icon/notification.png",
+      "pageClass": "PageNotification"
+    },
+    {
+      "title": "Search",
+      "subTitle": "Debounce search",
+      "icon": "asset/icon/web.png",
+      "pageClass": "PageSearch"
+    },
+    {
+      "title": "Help",
+      "subTitle": "Help center, contact us, privacy policy",
+      "icon": "asset/icon/help.png",
+      "pageClass": "PageAccount"
+    }
+  ]
+}
