@@ -30,14 +30,6 @@ class Types {
   static Color colourPurpleShade600 = Colors.purple.shade600;
 
   //----------------------------------------------------------------
-  //opacity
-  static const double opacityTimeSlot = .05;
-  static const double opacityVeryLow = .15;
-  static const double opacityLow = .2;
-  static const double opacityMed = .5;
-  static const double opacityHigh = 1;
-
-  //----------------------------------------------------------------
   //label
   static const String firstPage = "<<";
   static const String lastPage = ">>";
@@ -339,6 +331,7 @@ class Types {
   //----------------------------------------------------------------
   //opacity
   static const double opacityTimeSlot = .05;
+  static const double opacityVeryLow = .15;
   static const double opacityLow = .2;
   static const double opacityMed = .5;
   static const double opacityHigh = 1;

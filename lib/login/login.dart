@@ -3,6 +3,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:page/global/theme.dart';
 
+import '../widget/textFormField.dart';
+
 class SignUpPageWidget extends StatefulWidget {
   const SignUpPageWidget({super.key});
 
@@ -70,81 +72,13 @@ class _SignUpPageWidgetState extends State<SignUpPageWidget> {
                   ),
                   Padding(
                     padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
-                    child: Container(
-                      width: double.infinity,
-                      child: regularTextFormField(hintText: "Email",),
-                    ),
+                    child: textFormField(hintText: "Email",textInputType: TextInputType.emailAddress, ),
                   ),
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 16),
-                    child: Container(
-                      width: double.infinity,
-                      child: TextFormField(
-                        autofocus: true,
-                        autofillHints: [AutofillHints.email],
-                        obscureText: false,
-                        decoration: InputDecoration(
-                          suffixIcon: InkWell(
-                            focusNode: FocusNode(skipTraversal: true),
-                            child: GestureDetector(
-
-                              child: Icon(
-                                // _model.passwordVisibility
-                                // ? Icons.visibility_outlined
-                                Icons.visibility_off_outlined,
-                                color: Color(0xFF57636C),
-                                size: 24,
-                              ),
-                            ),
-                          ),
-                          hintText: "Password",
-                          hintStyle: GoogleFonts.plusJakartaSans(
-                            color: Color(0xFF57636C),
-                            fontSize: 16,
-                            letterSpacing: 0,
-                            fontWeight: FontWeight.w500,
-                          ),
-                          enabledBorder: OutlineInputBorder(
-                            borderSide: BorderSide(
-                              color: Color(0xFFF1F4F8),
-                              width: 2,
-                            ),
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          focusedBorder: OutlineInputBorder(
-                            borderSide: BorderSide(
-                              color: Color(0xFF4B39EF),
-                              width: 2,
-                            ),
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          errorBorder: OutlineInputBorder(
-                            borderSide: BorderSide(
-                              color: Color(0xFFE0E3E7),
-                              width: 2,
-                            ),
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          focusedErrorBorder: OutlineInputBorder(
-                            borderSide: BorderSide(
-                              color: Color(0xFFE0E3E7),
-                              width: 2,
-                            ),
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          filled: true,
-                          fillColor: Color(0xFFF1F4F8),
-                        ),
-                        style: GoogleFonts.plusJakartaSans(
-                          color: Color(0xFF101213),
-                          fontSize: 16,
-                          letterSpacing: 0,
-                          fontWeight: FontWeight.w500,
-                        ),
-                        keyboardType: TextInputType.emailAddress,
-                      ),
-                    ),
+                    padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
+                    child: textFormField(hintText: "Password",activatePasswordField: true, ),
                   ),
+
                   Padding(
                     padding:
                     const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
@@ -258,66 +192,3 @@ class _SignUpPageWidgetState extends State<SignUpPageWidget> {
   }
 }
 
-class regularTextFormField extends StatelessWidget {
-  final hintText;
-
-  const regularTextFormField({
-    Key? key,
-    required this.hintText,
-  }):super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return TextFormField(
-      autofocus: true,
-      autofillHints: [AutofillHints.email],
-      obscureText: false,
-      decoration: InputDecoration(
-        hintText: hintText,
-        hintStyle: GoogleFonts.plusJakartaSans(
-          color: Color(0xFF57636C),
-          fontSize: 16,
-          letterSpacing: 0,
-          fontWeight: FontWeight.w500,
-        ),
-        enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            color: Color(0xFFF1F4F8),
-            width: 2,
-          ),
-          borderRadius: BorderRadius.circular(12),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            color: Color(0xFF4B39EF),
-            width: 2,
-          ),
-          borderRadius: BorderRadius.circular(12),
-        ),
-        errorBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            color: Color(0xFFE0E3E7),
-            width: 2,
-          ),
-          borderRadius: BorderRadius.circular(12),
-        ),
-        focusedErrorBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            color: Color(0xFFE0E3E7),
-            width: 2,
-          ),
-          borderRadius: BorderRadius.circular(12),
-        ),
-        filled: true,
-        fillColor: Color(0xFFF1F4F8),
-      ),
-      style: GoogleFonts.plusJakartaSans(
-        color: Color(0xFF101213),
-        fontSize: 16,
-        letterSpacing: 0,
-        fontWeight: FontWeight.w500,
-      ),
-      keyboardType: TextInputType.emailAddress,
-    );
-  }
-}
