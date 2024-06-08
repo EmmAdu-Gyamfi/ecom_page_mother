@@ -3,20 +3,21 @@ import 'package:page/global/theme.dart';
 import '../global/typedef.dart';
 
 
-class NavTextButton extends StatelessWidget {
+class TextButton extends StatelessWidget {
   final String text;
   final VoidCallback onPressed;
 
-  NavTextButton({
+  const TextButton({
     super.key,
     required this.text,
-    required this.onPressed,
+    required this.onPressed, required Text child,
   });
 
   @override
   Widget build(BuildContext context) {
     return TextButton(
       onPressed: onPressed,
+      text: '',
       child: Text(
         text,
         style: TextStyle(
