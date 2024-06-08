@@ -256,13 +256,25 @@ class Types {
   static const double iconSizeMedium = 30.0;
   static const double iconSizeLarge = 40.0;
 
+  //----------------------------------------------------------------
+  //font size
+  static const double fontSizeH1 = 30;
+  static const double fontSizeH2 = 25;
+  static const double fontSizeH3 = 20;
+  static const double fontSizeH4 = 15;
+  static const double fontSizeH5 = 10;
+  static const double fontSizeH6 = 5;
 
+  //----------------------------------------------------------------
+  //border radius definition
   static BorderRadius radiusBorderSmall = BorderRadius.circular(5);
   static BorderRadius radiusBorderMedium = BorderRadius.circular(10);
   static BorderRadius radiusBorderMacroMedium = BorderRadius.circular(15);
   static BorderRadius radiusBorderLarge = BorderRadius.circular(20);
   static BorderRadius radiusBorderExtraLarge = BorderRadius.circular(30);
 
+  //----------------------------------------------------------------
+  //draggable
   static const double draggableInitialChildSize = 0.05;
 
   //----------------------------------------------------------------
