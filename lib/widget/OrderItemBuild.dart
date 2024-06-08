@@ -1,16 +1,12 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
-
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 
-import '../order/checkout.dart';
 class OrderItemBuild extends StatelessWidget {
   const OrderItemBuild({
-    super.key,
+    Key? key,
     required this.orderItems,
-  });
+  }) : super(key: key);
 
   final List<dynamic> orderItems;
 
@@ -21,57 +17,55 @@ class OrderItemBuild extends StatelessWidget {
         itemCount: orderItems.length,
         itemBuilder: (context, index) {
           return Padding(
-            padding: const EdgeInsets.only(left: 20.0, right: 20, top: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
             child: Container(
               height: 150,
               width: double.infinity,
               decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10)
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
               ),
               child: Row(
                 children: [
                   Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(left: 10.0, right: 10, top: 10),
-                        child: Container(
+                        padding: const EdgeInsets.all(10.0),
+                        child: SizedBox(
+                          width: 100,
+                          height: 100,
                           child: CachedNetworkImage(
-                            imageUrl: "${orderItems[index].productImages[0]}",
+                            imageUrl: orderItems[index]['product_image_list'][0]['image_url'],
                             fit: BoxFit.contain,
-                            width: 100,
-                            height: 100,
-                            placeholder: (context, url) => Container(height: 5, width: 5, child: CupertinoActivityIndicator()),
-                            errorWidget: (context, url, error) => new Icon(Icons.error),
+                            placeholder: (context, url) => const CupertinoActivityIndicator(),
+                            errorWidget: (context, url, error) => const Icon(Icons.error),
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 10.0),
-                        child: Row(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.only(right: 5.0),
-                              child: Icon(CupertinoIcons.trash, size: 15,),
-                            ),
-                            Text("Remove"),
-                          ],
-                        ),
-                      )
+                      Row(
+                        children: [
+                          Icon(Icons.delete),
+                          Text("Remove"),
+                        ],
+                      ),
                     ],
                   ),
-
-                  Padding(
-                    padding: const EdgeInsets.only(top: 10.0),
+                  Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        // Text('Product ID: ${orderItems[index].productId}'),
-                        Text('${orderItems[index].description}'),
-                        Text('GH₵${orderItems[index].unitPrice.toStringAsFixed(2)}', overflow: TextOverflow
-                            .ellipsis,
-                          maxLines: 3,),
-                        Text('${orderItems[index].category}'),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 10.0),
+                          child: Text(
+                            orderItems[index]['description'],
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ),
+                        Text(
+                          'GH₵${orderItems[index]['unit_price'].toStringAsFixed(2)}',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
 
                       ],
                     ),
