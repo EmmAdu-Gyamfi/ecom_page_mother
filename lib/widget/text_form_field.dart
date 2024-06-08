@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:page/global/theme.dart';
-
 import '../global/typedef.dart';
 
 class textFormField extends StatefulWidget {

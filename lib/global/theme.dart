@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-//<<<<<<< HEAD
 import 'package:google_fonts/google_fonts.dart';
 
 class TextStyles {
@@ -9,13 +8,10 @@ class TextStyles {
     letterSpacing: 0,
     fontWeight: FontWeight.w500,
   );
-
-// static final TextStyle hintText =
-//=======
 }
-  class AppTheme {
+
+class AppTheme {
   static Color primary = Colors.teal;
   static Color secondary = Colors.grey[800]!;
-  static Color bottonTextColor = Colors.white;
-  //>>>>>>> db0e651fbd453d45ace93a1f78c7064880f61d2e
-  }
+  static Color buttonTextColor = Colors.white;
+}
