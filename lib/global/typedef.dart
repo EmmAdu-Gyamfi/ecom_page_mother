@@ -267,7 +267,9 @@ class Types {
 
   //----------------------------------------------------------------
   //responsive size definition
-  static const double cordRespMaxWidth = 100;
+  static const double sizeWidthSmall = 100;
+  static const double sizeHeightSmall = 100;
+  static const double cardRespMaxWidth = 100;
   static const double containerRespMaxWidth = 100;
   static const double containerRespMaxHeight = 100;
 

@@ -5,17 +5,17 @@ import 'quantity_selector.dart';
 
 class OrderItemBuild extends StatefulWidget {
   const OrderItemBuild({
-    Key? key,
+    super.key,
     required this.orderItems,
-  }) : super(key: key);
+  });
 
   final List<dynamic> orderItems;
 
   @override
-  _OrderItemBuildState createState() => _OrderItemBuildState();
+  OrderItemBuildState createState() => OrderItemBuildState();
 }
 
-class _OrderItemBuildState extends State<OrderItemBuild> {
+class OrderItemBuildState extends State<OrderItemBuild> {
   late ValueNotifier<int?> quantityNotifier;
 
   @override
@@ -33,7 +33,7 @@ class _OrderItemBuildState extends State<OrderItemBuild> {
           return Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
             child: Container(
-              height: Types.double100,
+              height: Types.containerRespMaxHeight,
               width: double.infinity,
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -46,8 +46,8 @@ class _OrderItemBuildState extends State<OrderItemBuild> {
                       Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: SizedBox(
-                          width: Types.double100,
-                          height: Types.double100,
+                          width: Types.sizeWidthSmall,
+                          height: Types.sizeHeightSmall,
                           child: CachedNetworkImage(
                             imageUrl: widget.orderItems[index]['product_image_list'][0]['image_url'],
                             fit: BoxFit.contain,
@@ -56,7 +56,7 @@ class _OrderItemBuildState extends State<OrderItemBuild> {
                           ),
                         ),
                       ),
-                      Row(
+                      const Row(
                         children: [
                           Icon(Icons.delete),
                           Text("Remove"),
@@ -78,13 +78,11 @@ class _OrderItemBuildState extends State<OrderItemBuild> {
                         ),
                         Text(
                           'GH₵${widget.orderItems[index]['unit_price'].toStringAsFixed(Types.int2)}',
-                          style: TextStyle(fontWeight: FontWeight.bold),
+                          style: const TextStyle(fontWeight: FontWeight.bold),
                         ),
 
                         const Spacer(),
-
                         QuantitySelector(quantityNotifier: quantityNotifier),
-
                       ],
                     ),
                   ),
