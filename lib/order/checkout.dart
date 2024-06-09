@@ -1,8 +1,13 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
+
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:page/widget/appbar.dart';
-import '../widget/OrderItemBuild.dart';
+
 import '../global/typedef.dart';
+import '../widget/order_item_build.dart';
 
 Map<dynamic, dynamic> checkoutKeyList = {
   "order" : {
@@ -28,9 +33,10 @@ Map<dynamic, dynamic> checkoutKeyList = {
           }
         ]
       },
+
       {
         "product_id":2,
-        "quantity":2,
+        "quantity":0,
         "product_name":"Samsung S22 Ultra",
         "category": "Computing",
         "unit_price": 5000.0,
@@ -45,6 +51,8 @@ Map<dynamic, dynamic> checkoutKeyList = {
           }
         ]
       },
+
+
     ]
   }
 };
@@ -60,9 +68,14 @@ class CheckoutPage extends StatefulWidget {
 class _CheckoutPageState extends State<CheckoutPage> {
   @override
   Widget build(BuildContext context) {
-    double screenWidth = MediaQuery.of(context).size.width;
-    double screenHeight = MediaQuery.of(context).size.height;
-
+    double screenWidth = MediaQuery
+        .of(context)
+        .size
+        .width;
+    double screenHeight = MediaQuery
+        .of(context)
+        .size
+        .height;
     return Scaffold(
       appBar: AppBarCustom(
         title: 'Custom App Bar',
@@ -70,7 +83,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
         actionIcons: [Icons.search, Icons.person, Icons.shopping_cart],
       ),
 
-      backgroundColor: Colors.black.withOpacity(Types.opacityVeryLow),
+      backgroundColor: Colors.black.withOpacity(Types.opacityLowExtra),
 
       body: Container(
         height: screenHeight,
@@ -81,13 +94,19 @@ class _CheckoutPageState extends State<CheckoutPage> {
           ],
         ),
       ),
+
     );
   }
 
   Widget _productItemListVertical() {
+
+
     List<dynamic> itemList = checkoutKeyList["order"]["item_list"];
+
     return OrderItemBuild(orderItems: itemList);
+
   }
+
 }
 
 

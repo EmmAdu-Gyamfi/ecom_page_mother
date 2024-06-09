@@ -1,8 +1,9 @@
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import '../global/typedef.dart';
+import 'quantity_selector.dart';
 
-class OrderItemBuild extends StatelessWidget {
+class OrderItemBuild extends StatefulWidget {
   const OrderItemBuild({
     Key? key,
     required this.orderItems,
@@ -11,15 +12,28 @@ class OrderItemBuild extends StatelessWidget {
   final List<dynamic> orderItems;
 
   @override
+  _OrderItemBuildState createState() => _OrderItemBuildState();
+}
+
+class _OrderItemBuildState extends State<OrderItemBuild> {
+  late ValueNotifier<int?> quantityNotifier;
+
+  @override
+  void initState() {
+    super.initState();
+    quantityNotifier = ValueNotifier<int?>(null);
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Expanded(
       child: ListView.builder(
-        itemCount: orderItems.length,
+        itemCount: widget.orderItems.length,
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
             child: Container(
-              height: 150,
+              height: Types.double100,
               width: double.infinity,
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -32,12 +46,12 @@ class OrderItemBuild extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: SizedBox(
-                          width: 100,
-                          height: 100,
+                          width: Types.double100,
+                          height: Types.double100,
                           child: CachedNetworkImage(
-                            imageUrl: orderItems[index]['product_image_list'][0]['image_url'],
+                            imageUrl: widget.orderItems[index]['product_image_list'][0]['image_url'],
                             fit: BoxFit.contain,
-                            placeholder: (context, url) => const CupertinoActivityIndicator(),
+                            placeholder: (context, url) => const CircularProgressIndicator(),
                             errorWidget: (context, url, error) => const Icon(Icons.error),
                           ),
                         ),
@@ -55,17 +69,22 @@ class OrderItemBuild extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(top: 10.0),
+                          padding: const EdgeInsets.only(top: Types.paddingSmall),
                           child: Text(
-                            orderItems[index]['description'],
-                            maxLines: 2,
+                            widget.orderItems[index]['description'],
+                            maxLines: Types.int2,
                             overflow: TextOverflow.ellipsis,
                           ),
                         ),
                         Text(
-                          'GH₵${orderItems[index]['unit_price'].toStringAsFixed(2)}',
+                          'GH₵${widget.orderItems[index]['unit_price'].toStringAsFixed(Types.int2)}',
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
+
+                        Spacer(),
+
+                        QuantitySelector(quantityNotifier: quantityNotifier),
+
                       ],
                     ),
                   ),
