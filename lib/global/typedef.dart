@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pin_code_fields/pin_code_fields.dart';
+// import 'package:pin_code_fields/pin_code_fields.dart';
 
 class Types {
   //----------------------------------------------------------------
@@ -173,15 +173,18 @@ class Types {
   static const double double5 = 5;
   static const double double6 = 6;
   static const double double10 = 10;
+  static const double double20 = 20;
   static const double double30 = 30;
   static const double double60 = 60;
   static const double double100 = 100;
+  static const double double120 = 120;
   static const double double160 = 160;
   static const double double300 = 300;
   static const double double400 = 400;
   static const double double500 = 500;
   static const double double600 = 600;
   static const double double800 = 800;
+  static const double doubleInfinity = double.infinity;
   //----------------------------------------------------------------
   //Time Delay Definition 
   static const int errorDuration = 5;
@@ -462,192 +465,192 @@ class Types {
 
   //----------------------------------------------------------------
   //border
-  static final OutlineInputBorder borderInput = OutlineInputBorder(
-    borderRadius: BorderRadius.circular(Constant.double6),
-    borderSide: const BorderSide(
-      width: Constant.double1,
-      strokeAlign: BorderSide.strokeAlignOutside,
-      color: Constant.colourBorderGray,
-    ),
-  );
+  // static final OutlineInputBorder borderInput = OutlineInputBorder(
+  //   borderRadius: BorderRadius.circular(Constant.double6),
+  //   borderSide: const BorderSide(
+  //     width: Constant.double1,
+  //     strokeAlign: BorderSide.strokeAlignOutside,
+  //     color: Constant.colourBorderGray,
+  //   ),
+  // );
+  //
+  // static final OutlineInputBorder borderInputBlack = OutlineInputBorder(
+  //   borderRadius: BorderRadius.circular(Constant.double6),
+  //   borderSide: const BorderSide(
+  //     width: Constant.double1,
+  //     strokeAlign: BorderSide.strokeAlignOutside,
+  //     color: Constant.colourBlack,
+  //   ),
+  // );
 
-  static final OutlineInputBorder borderInputBlack = OutlineInputBorder(
-    borderRadius: BorderRadius.circular(Constant.double6),
-    borderSide: const BorderSide(
-      width: Constant.double1,
-      strokeAlign: BorderSide.strokeAlignOutside,
-      color: Constant.colourBlack,
-    ),
-  );
+  // static const BorderSide borderContainerGray =
+  // BorderSide(width: Constant.double1, color: Constant.colourBorderGray);
+  //
+  // static const InputBorder transparentInputBorder = OutlineInputBorder(
+  //   borderSide: BorderSide(
+  //     color: Colors.transparent,
+  //   ),
+  // );
 
-  static const BorderSide borderContainerGray =
-  BorderSide(width: Constant.double1, color: Constant.colourBorderGray);
+  // static const Size buttonSize = Size(Constant.double100, Constant.double35);
 
-  static const InputBorder transparentInputBorder = OutlineInputBorder(
-    borderSide: BorderSide(
-      color: Colors.transparent,
-    ),
-  );
-
-  static const Size buttonSize = Size(Constant.double100, Constant.double35);
-
-  static const UnderlineInputBorder underLineInputBorder = UnderlineInputBorder(
-    borderSide: BorderSide(color: Constant.colourRed),
-  );
+  // static const UnderlineInputBorder underLineInputBorder = UnderlineInputBorder(
+  //   borderSide: BorderSide(color: Constant.colourRed),
+  // );
 
   //----------------------------------------------------------------
   //Header Styles
-  static const TextStyle headerTextStyle = TextStyle(color: Colors.white);
-  static const IconThemeData headerIconTheme = IconThemeData(color: Colors.white);
+  // static const TextStyle headerTextStyle = TextStyle(color: Colors.white);
+  // static const IconThemeData headerIconTheme = IconThemeData(color: Colors.white);
 
   //----------------------------------------------------------------
   //otp signup pinTheme
-  static final PinTheme pinTheme = PinTheme(
-      shape: PinCodeFieldShape.circle,
-      fieldHeight: Constant.double50,
-      fieldWidth: Constant.double50,
-      selectedColor: Constant.colourBlue,
-      inactiveColor: Constant.colourBorderGray,
-      inactiveFillColor: Constant.colourApp,
-      activeColor: Colors.blue,
-      activeFillColor: Colors.blue,
-      selectedFillColor: Constant.colourApp,
-      fieldOuterPadding: const EdgeInsets.symmetric(horizontal: Constant.double6)
-  );
+  // static final PinTheme pinTheme = PinTheme(
+  //     shape: PinCodeFieldShape.circle,
+  //     fieldHeight: Constant.double50,
+  //     fieldWidth: Constant.double50,
+  //     selectedColor: Constant.colourBlue,
+  //     inactiveColor: Constant.colourBorderGray,
+  //     inactiveFillColor: Constant.colourApp,
+  //     activeColor: Colors.blue,
+  //     activeFillColor: Colors.blue,
+  //     selectedFillColor: Constant.colourApp,
+  //     fieldOuterPadding: const EdgeInsets.symmetric(horizontal: Constant.double6)
+  // );
 
   //----------------------------------------------------------------
   //Data mapper structure
-  static Map signUpEntity = {
-    Constant.pin: "",
-    Constant.email: "",
-    Constant.password: "",
-    Constant.lastNameKey: "",
-    Constant.firstNameKey: "",
-    Constant.phoneNumberKey: "",
-    Constant.passwordConfirm: ""
-  };
+  // static Map signUpEntity = {
+  //   Constant.pin: "",
+  //   Constant.email: "",
+  //   Constant.password: "",
+  //   Constant.lastNameKey: "",
+  //   Constant.firstNameKey: "",
+  //   Constant.phoneNumberKey: "",
+  //   Constant.passwordConfirm: ""
+  // };
 
-  static Map passwordChangeEntity = {
-    Constant.passwordCurrentKey: "",
-    Constant.passwordNewKey: "",
-    Constant.passwordNewConfirmKey: ""
-  };
+  // static Map passwordChangeEntity = {
+  //   Constant.passwordCurrentKey: "",
+  //   Constant.passwordNewKey: "",
+  //   Constant.passwordNewConfirmKey: ""
+  // };
 
-  static Map loginEntity = {
-    Constant.emailKey: "",
-    Constant.passwordKey: "",
-  };
+  // static Map loginEntity = {
+  //   Constant.emailKey: "",
+  //   Constant.passwordKey: "",
+  // };
 
   //----------------------------------------------------------------
   // Tag user keys
-  static const String tagUserTagDataKey = "tagData";
-  static const String tagName = "tagName";
-  static const String currentPage = 'currentPage';
-  static const String pageSize = 'pageSize';
-  static const String totalPage = 'totalPage';
-  static const String loadSize = 'loadSize';
-  static const String currentLoad = 'currentLoad';
-  static const String resourceUrl = 'resourceUrl';
-  static const String resourceName = 'resourceName';
+  // static const String tagUserTagDataKey = "tagData";
+  // static const String tagName = "tagName";
+  // static const String currentPage = 'currentPage';
+  // static const String pageSize = 'pageSize';
+  // static const String totalPage = 'totalPage';
+  // static const String loadSize = 'loadSize';
+  // static const String currentLoad = 'currentLoad';
+  // static const String resourceUrl = 'resourceUrl';
+  // static const String resourceName = 'resourceName';
 
-  static Map tagDataEntity = {
-    Constant.currentPage: 0,
-    Constant.totalResultKey: 0,
-    Constant.currentLoad: 0,
-    Constant.totalPage: 0,
-    Constant.loadSize: 0,
-    Constant.pageSize: 0,
-    Constant.resultKey: []
-  };
+  // static Map tagDataEntity = {
+  //   Constant.currentPage: 0,
+  //   Constant.totalResultKey: 0,
+  //   Constant.currentLoad: 0,
+  //   Constant.totalPage: 0,
+  //   Constant.loadSize: 0,
+  //   Constant.pageSize: 0,
+  //   Constant.resultKey: []
+  // };
+  //
+  // static Map notificationEntity = {
+  //   Constant.idKey: "",
+  //   Constant.labelKey: "",
+  //   Constant.descriptionKey: "",
+  //   Constant.defaultKey: false,
+  //   Constant.optionKey: []
+  // };
 
-  static Map notificationEntity = {
-    Constant.idKey: "",
-    Constant.labelKey: "",
-    Constant.descriptionKey: "",
-    Constant.defaultKey: false,
-    Constant.optionKey: []
-  };
-
-  static Map userEntity = {
-    Constant.currentPage: 0,
-    Constant.currentLoad: 0,
-    Constant.totalPage: 0,
-    Constant.loadSize: 0,
-    Constant.pageSize: 0,
-    Constant.resultKey: []
-  };
+  // static Map userEntity = {
+  //   Constant.currentPage: 0,
+  //   Constant.currentLoad: 0,
+  //   Constant.totalPage: 0,
+  //   Constant.loadSize: 0,
+  //   Constant.pageSize: 0,
+  //   Constant.resultKey: []
+  // };
 
 //----------------------------------------------------------------
   // service keys
-  static const String serviceId = "serviceId";
-  static const String serviceDuration = "duration";
-  static const String serviceName = "name";
-  static const String serviceDescription = "description";
-  static const String serviceMedia = "media";
+  // static const String serviceId = "serviceId";
+  // static const String serviceDuration = "duration";
+  // static const String serviceName = "name";
+  // static const String serviceDescription = "description";
+  // static const String serviceMedia = "media";
 
-  static Map serviceEntity = {
-    Constant.serviceId: "",
-    Constant.serviceDuration: 0,
-    Constant.serviceDescription: "",
-    Constant.serviceName: "",
-    Constant.serviceMedia: []
-  };
+  // static Map serviceEntity = {
+  //   Constant.serviceId: "",
+  //   Constant.serviceDuration: 0,
+  //   Constant.serviceDescription: "",
+  //   Constant.serviceName: "",
+  //   Constant.serviceMedia: []
+  // };
 
   //----------------------------------------------------------------
   //Product options
-  static List<String> productOptions = [addInformation, addExclusiveSelection, addOptionalSelection];
+  // static List<String> productOptions = [addInformation, addExclusiveSelection, addOptionalSelection];
 
   //----------------------------------------------------------------
   //Filtering options
-  static const String none = "None";
-  static const String defaultVibration = "Default";
-  static const String ascendingShortName = "ASC";
-  static const String descendingShortName = "DSC";
-  static List<String> sortOrderList = [ascendingShortName, descendingShortName,];
-  static List<String> sortTypeList = [ 'Name', "Date",'Rating'];
-  static List<String> sortUsersTypeList = ['Name', 'Date', 'Phone'];
+  // static const String none = "None";
+  // static const String defaultVibration = "Default";
+  // static const String ascendingShortName = "ASC";
+  // static const String descendingShortName = "DSC";
+  // static List<String> sortOrderList = [ascendingShortName, descendingShortName,];
+  // static List<String> sortTypeList = [ 'Name', "Date",'Rating'];
+  // static List<String> sortUsersTypeList = ['Name', 'Date', 'Phone'];
+  //
+  // //----------------------------------------------------------------
+  // //Tag User Options
+  //
+  // // static List<String> tagUserOptionList = [selectAll, deselectAll, tagUsers, ];
+  //
+  // //----------------------------------------------------------------
+  // //Notification List
+  // static List<String> vibrationTypes = ['Off', "Default", "Short", "Long"];
+  // static List<String> toneTypes = ["None","Default","Beep","Bird Loop","Attentive"];
+  //
+  // static List stepperData = [
+  //   {
+  //     "label": "ORDER PLACED",
+  //     "date": "Sat 21st October 2023",
+  //     "time": "07:15"
+  //   },
+  //   {
+  //     "label": "PENDING CONFIRMATION",
+  //     "date": "Sun 22nd October 2023",
+  //     "time": "14:12"
+  //   },
+  //   {
+  //     "label": "WAITING TO BE SHIPPED",
+  //     "date": "Mon 2nd November 2023",
+  //     "time": "12:30"
+  //   },
+  //   {
+  //     "label": "SHIPPED",
+  //     "date": "Fri 7TH November 2023",
+  //     "time": "18:15"
+  //   },
+  //   {
+  //     "label": "WAITING TO BE DELIVERED",
+  //     "date": "Tue 9th November 2023",
+  //     "time": "07:18"
+  //   },
+  //   {
+  //     "label": "DELIVERED",
+  //     "date": null,
+  //     "time": null
+  //   }
+  // ];
 
-  //----------------------------------------------------------------
-  //Tag User Options
-
-  // static List<String> tagUserOptionList = [selectAll, deselectAll, tagUsers, ];
-
-  //----------------------------------------------------------------
-  //Notification List
-  static List<String> vibrationTypes = ['Off', "Default", "Short", "Long"];
-  static List<String> toneTypes = ["None","Default","Beep","Bird Loop","Attentive"];
-
-  static List stepperData = [
-    {
-      "label": "ORDER PLACED",
-      "date": "Sat 21st October 2023",
-      "time": "07:15"
-    },
-    {
-      "label": "PENDING CONFIRMATION",
-      "date": "Sun 22nd October 2023",
-      "time": "14:12"
-    },
-    {
-      "label": "WAITING TO BE SHIPPED",
-      "date": "Mon 2nd November 2023",
-      "time": "12:30"
-    },
-    {
-      "label": "SHIPPED",
-      "date": "Fri 7TH November 2023",
-      "time": "18:15"
-    },
-    {
-      "label": "WAITING TO BE DELIVERED",
-      "date": "Tue 9th November 2023",
-      "time": "07:18"
-    },
-    {
-      "label": "DELIVERED",
-      "date": null,
-      "time": null
-    }
-  ];
-
-}
+  }

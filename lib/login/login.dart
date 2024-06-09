@@ -16,7 +16,7 @@ class _SignUpPageWidgetState extends State<SignUpPageWidget> {
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
-    double maxWidth =Types.maxWidth;
+    double maxWidth =Types.doubleInfinity;
 
     return Scaffold(
 
@@ -33,9 +33,9 @@ class _SignUpPageWidgetState extends State<SignUpPageWidget> {
               //     offset: Offset(0, 1),
               //   ),
               // ],
-              color: Types.colourWhite
+              color: Types.colourApp
             ),
-            constraints:BoxConstraints(maxWidth: Types.maxWidth),
+            constraints:BoxConstraints(maxWidth: Types.doubleInfinity),
             child: SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -44,11 +44,11 @@ class _SignUpPageWidgetState extends State<SignUpPageWidget> {
                     padding: const EdgeInsets.all( Types.paddingMedium),
                     child: Container(
                       width: double.infinity,
-                      height: Types.height100,
+                      height: Types.double100,
                       decoration: BoxDecoration(
 
 
-                        color: Types.colourWhite
+                        color: Types.colourApp
                       ),
 
                       child: Padding(

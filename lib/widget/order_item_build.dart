@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import '../global/typedef.dart';
@@ -33,7 +34,7 @@ class _OrderItemBuildState extends State<OrderItemBuild> {
           return Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
             child: Container(
-              height: Types.double100,
+              height: Types.double120,
               width: double.infinity,
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -47,11 +48,11 @@ class _OrderItemBuildState extends State<OrderItemBuild> {
                         padding: const EdgeInsets.all(10.0),
                         child: SizedBox(
                           width: Types.double100,
-                          height: Types.double100,
+                          height: Types.double60,
                           child: CachedNetworkImage(
                             imageUrl: widget.orderItems[index]['product_image_list'][0]['image_url'],
                             fit: BoxFit.contain,
-                            placeholder: (context, url) => const CircularProgressIndicator(),
+                            placeholder: (context, url) => const CupertinoActivityIndicator(),
                             errorWidget: (context, url, error) => const Icon(Icons.error),
                           ),
                         ),
