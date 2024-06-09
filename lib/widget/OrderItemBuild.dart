@@ -66,7 +66,6 @@ class OrderItemBuild extends StatelessWidget {
                           'GH₵${orderItems[index]['unit_price'].toStringAsFixed(2)}',
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
-
                       ],
                     ),
                   ),
