@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:page/widget/appbar.dart';
 
 import '../global/typedef.dart';
+import '../widget/button_checkout.dart';
 import '../widget/order_item_build.dart';
 
 Map<dynamic, dynamic> checkoutKeyList = {
@@ -78,7 +79,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
         .height;
     return Scaffold(
       appBar: AppBarCustom(
-        title: 'Custom App Bar',
+        title: 'CheckoutPage',
         leadingIcon: Icons.menu,
         actionIcons: [Icons.search, Icons.person, Icons.shopping_cart],
       ),
@@ -90,7 +91,8 @@ class _CheckoutPageState extends State<CheckoutPage> {
         width: screenWidth,
         child: Column(
           children: [
-            _productItemListVertical()
+            _productItemListVertical(),
+            CustomCheckoutButton(buttonText: "Proceed to Checkout",onPressed: () => null,)
           ],
         ),
       ),

@@ -12,7 +12,7 @@ class TextButtonCustom extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       onPressed: onPressed,
-      child: Text(label, style: TextStyle(fontSize: Types.fontSizeH4, color: AppTheme.primary)),
+      child: Text(label, style: TextStyle(fontSize: Types.textInfo, color: AppTheme.primary)),
     );
   }
 }
