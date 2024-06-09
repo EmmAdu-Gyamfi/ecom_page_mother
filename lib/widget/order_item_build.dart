@@ -81,7 +81,7 @@ class _OrderItemBuildState extends State<OrderItemBuild> {
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
 
-                        Spacer(),
+                        const Spacer(),
 
                         QuantitySelector(quantityNotifier: quantityNotifier),
 

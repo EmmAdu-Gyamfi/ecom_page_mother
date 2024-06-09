@@ -83,7 +83,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
         actionIcons: [Icons.search, Icons.person, Icons.shopping_cart],
       ),
 
-      backgroundColor: Colors.black.withOpacity(Types.opacityLowExtra),
+      backgroundColor: Colors.black.withOpacity(Types.opacityVeryLow),
 
       body: Container(
         height: screenHeight,

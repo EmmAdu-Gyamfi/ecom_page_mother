@@ -16,7 +16,6 @@ class _SignUpPageWidgetState extends State<SignUpPageWidget> {
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
-    double maxWidth =Types.maxWidth;
 
     return Scaffold(
 
@@ -25,7 +24,7 @@ class _SignUpPageWidgetState extends State<SignUpPageWidget> {
         ///place in container with a maxSize
         child: Center(
           child: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               // boxShadow:  [
               //   BoxShadow(
               //     color: Types.colourBlack,
@@ -35,7 +34,7 @@ class _SignUpPageWidgetState extends State<SignUpPageWidget> {
               // ],
               color: Types.colourWhite
             ),
-            constraints:BoxConstraints(maxWidth: Types.maxWidth),
+            constraints:const BoxConstraints(maxWidth: Types.containerRespMaxWidth),
             child: SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -44,14 +43,10 @@ class _SignUpPageWidgetState extends State<SignUpPageWidget> {
                     padding: const EdgeInsets.all( Types.paddingMedium),
                     child: Container(
                       width: double.infinity,
-                      height: Types.height100,
-                      decoration: BoxDecoration(
+                      height: Types.containerRespMaxHeight,
+                      decoration: const BoxDecoration(color: Types.colourWhite),
 
-
-                        color: Types.colourWhite
-                      ),
-
-                      child: Padding(
+                      child: const Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(5, 0, 0, 0),
                         child: Icon(FontAwesomeIcons.creditCard,size: 50,),
                       ),
@@ -77,16 +72,13 @@ class _SignUpPageWidgetState extends State<SignUpPageWidget> {
                       ),
                       Padding(
                         padding: const EdgeInsets.fromLTRB(10, 0, 0, 24),
-                        child: Text(
-                            'Let\'s get started by filling out the form below.',
-                            style: TextStyles.textH6
-                        ),
+                        child: Text('Let\'s get started by filling out the form below.', style: TextStyles.textH6),
                       ),
-                      Padding(
+                      const Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
                         child: textFormField(hintText: "Email",textInputType: TextInputType.emailAddress, ),
                       ),
-                      Padding(
+                      const Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
                         child: textFormField(hintText: "Password",activatePasswordField: true, ),
                       ),
@@ -96,7 +88,7 @@ class _SignUpPageWidgetState extends State<SignUpPageWidget> {
                         const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0xFF4B39EF),
+                            backgroundColor: const Color(0xFF4B39EF),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(7),
                             ),
@@ -104,7 +96,7 @@ class _SignUpPageWidgetState extends State<SignUpPageWidget> {
                           onPressed: () {
                             print("hi");
                           },
-                          child: Text(
+                          child: const Text(
                             "Sign In",
                             style: TextStyle(color: Colors.white),
                           ),
@@ -113,38 +105,36 @@ class _SignUpPageWidgetState extends State<SignUpPageWidget> {
 
                       // Generated code for this dividerOR Widget...
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 24),
+                        padding: const EdgeInsetsDirectional.fromSTEB(0, 10, 0, 24),
                         child: Container(
                           width: 370,
                           child: Stack(
-                            alignment: AlignmentDirectional(0, 0),
+                            alignment: const AlignmentDirectional(0, 0),
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0, 0),
+                                alignment: const AlignmentDirectional(0, 0),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 12),
+                                  padding: const EdgeInsetsDirectional.fromSTEB(0, 12, 0, 12),
                                   child: Container(
                                     width: double.infinity,
                                     height: 2,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0xFFF1F4F8),
                                     ),
                                   ),
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0, 0),
+                                alignment: const AlignmentDirectional(0, 0),
                                 child: Container(
                                   width: 70,
                                   height: 32,
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                  ),
-                                  alignment: AlignmentDirectional(0, 0),
+                                  decoration: const BoxDecoration(color: Colors.white),
+                                  alignment: const AlignmentDirectional(0, 0),
                                   child: Text(
                                     'OR',
                                     style: GoogleFonts.plusJakartaSans(
-                                      color: Color(0xFF57636C),
+                                      color: const Color(0xFF57636C),
                                       fontSize: 14,
                                       letterSpacing: 0,
                                       fontWeight: FontWeight.w500,
@@ -163,7 +153,7 @@ class _SignUpPageWidgetState extends State<SignUpPageWidget> {
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.white,
                             textStyle: GoogleFonts.plusJakartaSans(
-                              color: Color(0xFF101213),
+                              color: const Color(0xFF101213),
                               fontSize: 16,
                               letterSpacing: 0,
                               fontWeight: FontWeight.w500,
@@ -175,20 +165,13 @@ class _SignUpPageWidgetState extends State<SignUpPageWidget> {
                           onPressed: () {
                             print("hi");
                           },
-                          child: Row(
+                          child: const Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              FaIcon(
-                                FontAwesomeIcons.google,
-                                size: 20,
-                                color: Colors.black,
-                              ),
+                              FaIcon(FontAwesomeIcons.google, size: 20, color: Colors.black),
                               Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Text(
-                                  "Continue with Google",
-                                  style: TextStyle(color: Colors.black),
-                                ),
+                                padding: EdgeInsets.all(8.0),
+                                child: Text("Continue with Google", style: TextStyle(color: Colors.black)),
                               ),
                             ],
                           ),
