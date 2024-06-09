@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:page/order/delivery.dart';
 import 'package:page/widget/appbar.dart';
 
 import '../global/typedef.dart';
@@ -79,12 +80,12 @@ class _CheckoutPageState extends State<CheckoutPage> {
         .height;
     return Scaffold(
       appBar: AppBarCustom(
-        title: 'CheckoutPage',
+        title: Types.checkoutPage,
         leadingIcon: Icons.menu,
         actionIcons: [Icons.search, Icons.person, Icons.shopping_cart],
       ),
 
-      backgroundColor: Colors.black.withOpacity(Types.opacityVeryLow),
+      backgroundColor: Colors.black.withOpacity(Types.opacityLowExtra),
 
       body: Container(
         height: screenHeight,
@@ -92,7 +93,14 @@ class _CheckoutPageState extends State<CheckoutPage> {
         child: Column(
           children: [
             _productItemListVertical(),
-            CustomCheckoutButton(buttonText: "Proceed to Checkout",onPressed: () => null,)
+            CustomCheckoutButton(buttonText: Types.proceedToDelivery,onPressed: (){
+              {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => DeliveryPage()),
+                );
+              }
+            })
           ],
         ),
       ),

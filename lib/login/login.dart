@@ -32,9 +32,9 @@ class _SignUpPageWidgetState extends State<SignUpPageWidget> {
               //     offset: Offset(0, 1),
               //   ),
               // ],
-              color: Types.colourWhite
+              color: Types.colourApp
             ),
-            constraints:const BoxConstraints(maxWidth: Types.containerRespMaxWidth),
+            constraints:const BoxConstraints(maxWidth: Types.doubleInfinity),
             child: SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -43,8 +43,8 @@ class _SignUpPageWidgetState extends State<SignUpPageWidget> {
                     padding: const EdgeInsets.all( Types.paddingMedium),
                     child: Container(
                       width: double.infinity,
-                      height: Types.containerRespMaxHeight,
-                      decoration: const BoxDecoration(color: Types.colourWhite),
+                      height: Types.doubleInfinity,
+                      decoration: const BoxDecoration(color: Types.colourApp),
 
                       child: const Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(5, 0, 0, 0),

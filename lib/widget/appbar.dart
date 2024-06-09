@@ -1,22 +1,29 @@
 import 'package:flutter/material.dart';
+import 'package:page/global/typedef.dart';
 
 class AppBarCustom extends StatelessWidget implements PreferredSizeWidget {
   final String title;
   final IconData leadingIcon;
-  final List<IconData> actionIcons;
+  final List<IconData>? actionIcons;
 
-  const AppBarCustom({super.key,
+  const AppBarCustom({
+    Key? key,
     required this.title,
     required this.leadingIcon,
-    required this.actionIcons,
-  });
+    this.actionIcons,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
       leading: Icon(leadingIcon),
       title: Text(title),
-      actions: actionIcons.map((iconData) => Padding(padding: const EdgeInsets.only(right: 5), child: Icon(iconData))).toList(),
+      actions: actionIcons != null
+          ? actionIcons!.map((iconData) => Padding(
+        padding: const EdgeInsets.only(right: Types.paddingSmall),
+        child: Icon(iconData),
+      )).toList()
+          : [],
     );
   }
 

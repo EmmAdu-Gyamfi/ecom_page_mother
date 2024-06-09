@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import '../global/typedef.dart';
@@ -5,17 +6,17 @@ import 'quantity_selector.dart';
 
 class OrderItemBuild extends StatefulWidget {
   const OrderItemBuild({
-    super.key,
+    Key? key,
     required this.orderItems,
-  });
+  }) : super(key: key);
 
   final List<dynamic> orderItems;
 
   @override
-  OrderItemBuildState createState() => OrderItemBuildState();
+  _OrderItemBuildState createState() => _OrderItemBuildState();
 }
 
-class OrderItemBuildState extends State<OrderItemBuild> {
+class _OrderItemBuildState extends State<OrderItemBuild> {
   late ValueNotifier<int?> quantityNotifier;
 
   @override
@@ -31,32 +32,32 @@ class OrderItemBuildState extends State<OrderItemBuild> {
         itemCount: widget.orderItems.length,
         itemBuilder: (context, index) {
           return Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
+            padding: const EdgeInsets.symmetric(horizontal: Types.paddingLarge, vertical: Types.paddingMedium),
             child: Container(
-              height: Types.containerRespMaxHeight,
+              height: Types.double120,
               width: double.infinity,
               decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
+                borderRadius: BorderRadius.circular(Types.paddingMedium),
               ),
               child: Row(
                 children: [
                   Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(10.0),
+                        padding: const EdgeInsets.all(Types.paddingMedium),
                         child: SizedBox(
-                          width: Types.sizeWidthSmall,
-                          height: Types.sizeHeightSmall,
+                          width: Types.double100,
+                          height: Types.double60,
                           child: CachedNetworkImage(
                             imageUrl: widget.orderItems[index]['product_image_list'][0]['image_url'],
                             fit: BoxFit.contain,
-                            placeholder: (context, url) => const CircularProgressIndicator(),
+                            placeholder: (context, url) => const CupertinoActivityIndicator(),
                             errorWidget: (context, url, error) => const Icon(Icons.error),
                           ),
                         ),
                       ),
-                      const Row(
+                      Row(
                         children: [
                           Icon(Icons.delete),
                           Text("Remove"),
@@ -78,11 +79,13 @@ class OrderItemBuildState extends State<OrderItemBuild> {
                         ),
                         Text(
                           'GH₵${widget.orderItems[index]['unit_price'].toStringAsFixed(Types.int2)}',
-                          style: const TextStyle(fontWeight: FontWeight.bold),
+                          style: TextStyle(fontWeight: FontWeight.bold),
                         ),
 
-                        const Spacer(),
+                        Spacer(),
+
                         QuantitySelector(quantityNotifier: quantityNotifier),
+
                       ],
                     ),
                   ),

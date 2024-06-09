@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:page/global/typedef.dart';
 
 class CustomCheckoutButton extends StatelessWidget {
   final String buttonText;
@@ -13,21 +14,21 @@ class CustomCheckoutButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(20.0), // Use the correct Types value here
+      padding: const EdgeInsets.all(Types.paddingLarge), // Use the correct Types value here
       child: Container(
-        height: 60.0, // Use the correct Types value here
+        height: Types.double60, // Use the correct Types value here
         width: double.infinity,
         alignment: Alignment.center,
         decoration: BoxDecoration(
-          color: Colors.blue, // Use the correct Types value here
-          borderRadius: BorderRadius.circular(10.0), // Use the correct Types value here
+          color: Types.colourBlue, // Use the correct Types value here
+          borderRadius: BorderRadius.circular(Types.paddingMedium), // Use the correct Types value here
         ),
         child: TextButton(
           onPressed: onPressed,
           child: Text(
             buttonText,
             style: TextStyle(
-              color: Colors.white, // Use the correct Types value here
+              color: Types.colourApp, // Use the correct Types value here
               fontWeight: FontWeight.bold,
             ),
           ),
