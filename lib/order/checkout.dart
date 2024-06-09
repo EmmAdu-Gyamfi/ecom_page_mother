@@ -79,7 +79,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
         .height;
     return Scaffold(
       appBar: AppBarCustom(
-        title: 'Custom App Bar',
+        title: 'CheckoutPage',
         leadingIcon: Icons.menu,
         actionIcons: [Icons.search, Icons.person, Icons.shopping_cart],
       ),

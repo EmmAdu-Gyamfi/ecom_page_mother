@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 Map<dynamic, dynamic> deliveryKeyList = {
   "delivery" : {
     "delivery_id":1,
@@ -7,3 +9,19 @@ Map<dynamic, dynamic> deliveryKeyList = {
     "address":"Street avenue"
       },
 };
+
+class DeliveryPage extends StatefulWidget {
+  const DeliveryPage({super.key});
+
+  @override
+  State<DeliveryPage> createState() => _DeliveryPageState();
+}
+
+class _DeliveryPageState extends State<DeliveryPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+
+    );
+  }
+}
