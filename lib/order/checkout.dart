@@ -8,8 +8,8 @@ import 'package:page/order/delivery.dart';
 import 'package:page/widget/appbar.dart';
 
 import '../global/typedef.dart';
-import '../widget/button_checkout.dart';
-import '../widget/order_item_build.dart';
+import '../widget/button_custom.dart';
+import '../widget/order_item_build_with_quantity_selector.dart';
 
 Map<dynamic, dynamic> checkoutKeyList = {
   "order" : {
@@ -88,12 +88,12 @@ class _CheckoutPageState extends State<CheckoutPage> {
       backgroundColor: Colors.black.withOpacity(Types.opacityLowExtra),
 
       body: Container(
-        height: screenHeight,
-        width: screenWidth,
+        height: Types.doubleInfinity,
+        width: Types.doubleInfinity,
         child: Column(
           children: [
             _productItemListVertical(),
-            CustomCheckoutButton(buttonText: Types.proceedToDelivery,onPressed: (){
+            CustomCheckoutButton(buttonText: Types.proceedToDelivery, height: Types.double60, width: Types.doubleInfinity, onPressed: (){
               {
                 Navigator.push(
                   context,
@@ -113,7 +113,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
 
     List<dynamic> itemList = checkoutKeyList["order"]["item_list"];
 
-    return OrderItemBuild(orderItems: itemList);
+    return OrderItemBuildWithQuantitySelector(orderItems: itemList);
 
   }
 

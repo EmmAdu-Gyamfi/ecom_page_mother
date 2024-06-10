@@ -209,11 +209,16 @@ class Types {
   //Product Labels
   static const String upload = "Upload";
   static const String productTypeKey = "type";
+  static const String paymentMethod = "Payment Method";
   static const String deliveryPage = "Delivery Page";
   static const String country = "Country";
   static const String city = "City";
+  static const String subTotal = "Subtotal";
+  static const String total = "Total";
+  static const String shipping = "Shipping";
   static const String town = "Town";
   static const String managePage = "Manage Page";
+  static const String proceed = "Proceed";
   static const String checkoutPage = "Checkout Page";
   static const String postalAddress = "Postal Address";
   static const String proceedToPayment = "Proceed to Payment";

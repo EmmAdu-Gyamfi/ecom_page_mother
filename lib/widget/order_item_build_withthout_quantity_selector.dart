@@ -4,8 +4,8 @@ import 'package:cached_network_image/cached_network_image.dart';
 import '../global/typedef.dart';
 import 'quantity_selector.dart';
 
-class OrderItemBuild extends StatefulWidget {
-  const OrderItemBuild({
+class OrderItemBuildWiththoutQuantitySelector extends StatefulWidget {
+  const OrderItemBuildWiththoutQuantitySelector({
     Key? key,
     required this.orderItems,
   }) : super(key: key);
@@ -16,7 +16,7 @@ class OrderItemBuild extends StatefulWidget {
   _OrderItemBuildState createState() => _OrderItemBuildState();
 }
 
-class _OrderItemBuildState extends State<OrderItemBuild> {
+class _OrderItemBuildState extends State<OrderItemBuildWiththoutQuantitySelector> {
   late ValueNotifier<int?> quantityNotifier;
 
   @override
@@ -41,34 +41,34 @@ class _OrderItemBuildState extends State<OrderItemBuild> {
                 borderRadius: BorderRadius.circular(Types.paddingMedium),
               ),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(Types.paddingMedium),
-                        child: SizedBox(
-                          width: Types.double100,
-                          height: Types.double60,
-                          child: CachedNetworkImage(
-                            imageUrl: widget.orderItems[index]['product_image_list'][0]['image_url'],
-                            fit: BoxFit.contain,
-                            placeholder: (context, url) => const CupertinoActivityIndicator(),
-                            errorWidget: (context, url, error) => const Icon(Icons.error),
-                          ),
-                        ),
+                  Padding(
+                    padding: const EdgeInsets.all(Types.paddingMedium),
+                    child: SizedBox(
+                      width: Types.double100,
+                      height: Types.double60,
+                      child: CachedNetworkImage(
+                        imageUrl: widget.orderItems[index]['product_image_list'][0]['image_url'],
+                        fit: BoxFit.contain,
+                        placeholder: (context, url) => const CupertinoActivityIndicator(),
+                        errorWidget: (context, url, error) => const Icon(Icons.error),
                       ),
-                      Row(
-                        children: [
-                          Icon(Icons.delete),
-                          Text("Remove"),
-                        ],
-                      ),
-                    ],
+                    ),
                   ),
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
+                        Padding(
+                          padding: const EdgeInsets.only(top: Types.paddingSmall),
+                          child: Text(
+                            widget.orderItems[index]['product_name'],
+                            maxLines: Types.int2,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ),
                         Padding(
                           padding: const EdgeInsets.only(top: Types.paddingSmall),
                           child: Text(
@@ -78,13 +78,17 @@ class _OrderItemBuildState extends State<OrderItemBuild> {
                           ),
                         ),
                         Text(
-                          'GH₵${widget.orderItems[index]['unit_price'].toStringAsFixed(Types.int2)}',
-                          style: TextStyle(fontWeight: FontWeight.bold),
+                          'GH₵${widget.orderItems[index]['unit_price']}',
+                          style: TextStyle(fontWeight: FontWeight.normal),
+                        ),
+                        Text(
+                          'Qty ${widget.orderItems[index]['quantity']}',
+                          style: TextStyle(fontWeight: FontWeight.normal),
                         ),
 
                         Spacer(),
 
-                        QuantitySelector(quantityNotifier: quantityNotifier),
+                        // QuantitySelector(quantityNotifier: quantityNotifier),
 
                       ],
                     ),

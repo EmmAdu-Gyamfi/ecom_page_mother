@@ -3,7 +3,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:page/global/theme.dart';
 import 'package:page/global/typedef.dart';
-import '../widget/text_form_field.dart';
+
+import '../widget/textformfield_validator.dart';
 
 class SignUpPageWidget extends StatefulWidget {
   const SignUpPageWidget({super.key});
@@ -13,6 +14,7 @@ class SignUpPageWidget extends StatefulWidget {
 }
 
 class _SignUpPageWidgetState extends State<SignUpPageWidget> {
+  final TextEditingController textController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
@@ -72,17 +74,16 @@ class _SignUpPageWidgetState extends State<SignUpPageWidget> {
                       ),
                       Padding(
                         padding: const EdgeInsets.fromLTRB(10, 0, 0, 24),
-                        child: Text('Let\'s get started by filling out the form below.', style: TextStyles.textH6),
+                        child: Text('Let\'s get started by filling out the form below.', style: TextStyles.textInputStyle),
                       ),
-                      const Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
-                        child: textFormField(hintText: "Email",textInputType: TextInputType.emailAddress, ),
+                      Padding(
+                        padding: const EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
+                        child: TextFormFieldCustom(hintText: "Email", controller: textController, errorMessage: 'Invalid Email', validator: Types.nameRegExp),
                       ),
-                      const Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
-                        child: textFormField(hintText: "Password",activatePasswordField: true, ),
+                      Padding(
+                        padding: const EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
+                        child: TextFormFieldCustom(hintText: "Password",activatePasswordField: true, controller: textController, errorMessage: 'Invalid password', validator: Types.passwordRegExp),
                       ),
-
                       Padding(
                         padding:
                         const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
@@ -94,6 +95,7 @@ class _SignUpPageWidgetState extends State<SignUpPageWidget> {
                             ),
                           ),
                           onPressed: () {
+                           var hi =  textController.text;
                             print("hi");
                           },
                           child: const Text(

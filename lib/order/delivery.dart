@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import '../global/typedef.dart';
 import '../widget/appbar.dart';
-import '../widget/button_checkout.dart';
-import '../widget/textformfield_withvalidator.dart';
+import '../widget/button_custom.dart';
+import '../widget/textformfield_validator.dart';
 import 'manage.dart';
 
 Map<dynamic, dynamic> deliveryKeyList = {
@@ -54,39 +54,48 @@ class _DeliveryPageState extends State<DeliveryPage> {
             children: [
               Padding(
                 padding: const EdgeInsets.only(bottom: Types.double15),
-                child: CustomValidatedTextFormField(
+                child: TextFormFieldCustom(
                   labelText: Types.country,
                   controller: _countryController,
-                  validatorErrorMessage: Types.pleaseEnterACountry,
+                  errorMessage: Types.pleaseEnterACountry,
+                  hintText: "",
+                  activatePasswordField: false, validator: Types.nameRegExp,
                 ),
               ),
               // SizedBox(height: Types.double15),
               Padding(
                 padding: const EdgeInsets.only(bottom: Types.double15),
-                child: CustomValidatedTextFormField(
+                child: TextFormFieldCustom(
                   labelText: Types.city,
                   controller: _cityController,
-                  validatorErrorMessage: Types.pleaseEnterACity,
+                  errorMessage: Types.pleaseEnterACity,
+                  hintText: "",
+                  activatePasswordField: false, validator:Types.nameRegExp,
                 ),
               ),
               // SizedBox(height: Types.double15),
               Padding(
                 padding: const EdgeInsets.only(bottom: Types.double15),
-                child: CustomValidatedTextFormField(
+                child: TextFormFieldCustom(
                   labelText: Types.town,
                   controller: _townController,
-                  validatorErrorMessage: Types.pleaseEnterATown,
+                  errorMessage: Types.pleaseEnterATown,
+                  hintText: "",
+                  activatePasswordField: false, validator: Types.nameRegExp,
+
                 ),
               ),
               // SizedBox(height: Types.double15),
-              CustomValidatedTextFormField(
+              TextFormFieldCustom(
                 labelText: Types.postalAddress,
                 controller: _postalAddressController,
-                validatorErrorMessage: Types.pleaseEnterAPostalAddress,
+                errorMessage: Types.pleaseEnterAPostalAddress,
+                hintText: "",
+                activatePasswordField: false, validator: Types.nameRegExp,
               ),
               // SizedBox(height: Types.double15),
               Spacer(),
-              CustomCheckoutButton(buttonText: Types.proceedToPayment,
+              CustomCheckoutButton(buttonText: Types.proceed,height: Types.double60, width: Types.doubleInfinity,
                 onPressed: () {
                   if (_formKey.currentState!.validate()) {
                     // If the form is valid, save the inputs to the deliveryKeyList
